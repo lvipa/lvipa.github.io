@@ -20,6 +20,6 @@ I am a Senior DevOps / Infrastructure Engineer with more than seven years of exp
 
 ## Experience in numbers
 
-My résumé includes CI/CD work for 50+ applications and support for 30+ Linux/Windows servers, Docker containers and S3-compatible storage.
+My resume includes CI/CD work for 50+ applications and support for 30+ Linux/Windows servers, Docker containers and S3-compatible storage.
 
-Learn more on [LinkedIn](https://www.linkedin.com/in/lvipa/) or [HH.ru](https://kinel.hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959). The fastest way to reach me is [Telegram](https://t.me/lvipa).
+Learn more on [LinkedIn](https://www.linkedin.com/in/lvipa/) or [HH.ru](https://hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959). The fastest way to reach me is [Telegram](https://t.me/lvipa).

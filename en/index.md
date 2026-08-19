@@ -18,7 +18,7 @@ translation: /
     <p>I build and operate Linux/Windows infrastructure, CI/CD processes and containerized services. This is my professional profile and a way to get in touch.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://t.me/lvipa">Message on Telegram</a>
-      <a class="button button-secondary" href="https://kinel.hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959">View resume</a>
+      <a class="button button-secondary" href="https://hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959">View resume</a>
     </div>
     <div class="profile-links" aria-label="Professional profiles">
       <a href="https://www.linkedin.com/in/lvipa/">LinkedIn</a>
@@ -38,7 +38,7 @@ translation: /
       <a class="nav-card" href="{{ '/en/about/' | relative_url }}"><strong>About</strong><span>Professional profile and areas of work.</span></a>
       <a class="nav-card" href="{{ '/en/projects/' | relative_url }}"><strong>Projects</strong><span>Practice outcomes and working initiatives.</span></a>
       <a class="nav-card" href="{{ '/en/notes/' | relative_url }}"><strong>Notes</strong><span>Materials on infrastructure and automation.</span></a>
-      <a class="nav-card" href="{{ '/en/contact/' | relative_url }}"><strong>Contact</strong><span>LinkedIn, Telegram, GitHub and résumé.</span></a>
+      <a class="nav-card" href="{{ '/en/contact/' | relative_url }}"><strong>Contact</strong><span>LinkedIn, Telegram, GitHub and resume.</span></a>
     </div>
   </div>
 </section>

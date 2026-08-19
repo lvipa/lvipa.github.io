@@ -22,6 +22,6 @@ translation: /en/about/
 
 В резюме отражена работа с CI/CD для 50+ приложений и поддержка 30+ Linux/Windows-серверов, Docker-контейнеров и S3-совместимых хранилищ.
 
-Больше о профессиональном опыте — в [LinkedIn](https://www.linkedin.com/in/lvipa/) и [резюме на HH.ru](https://kinel.hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959). Оперативно связаться со мной можно через [Telegram](https://t.me/lvipa).
+Больше о профессиональном опыте — в [LinkedIn](https://www.linkedin.com/in/lvipa/) и [резюме на HH.ru](https://hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959). Оперативно связаться со мной можно через [Telegram](https://t.me/lvipa).
 
 [На главную]({{ '/' | relative_url }})

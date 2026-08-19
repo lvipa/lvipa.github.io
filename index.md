@@ -17,7 +17,7 @@ translation: /en/
     <p>Развиваю и сопровождаю Linux/Windows-инфраструктуру, CI/CD-процессы и контейнерные сервисы. Здесь — мой профессиональный профиль и точки для связи.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://t.me/lvipa">Написать в Telegram</a>
-      <a class="button button-secondary" href="https://kinel.hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959">Открыть резюме</a>
+      <a class="button button-secondary" href="https://hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959">Открыть резюме</a>
     </div>
     <div class="profile-links" aria-label="Профессиональные профили">
       <a href="https://www.linkedin.com/in/lvipa/">LinkedIn</a>
