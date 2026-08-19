@@ -75,9 +75,18 @@ a:hover { color: var(--accent); }
 .page { width: min(780px, calc(100% - 48px)); margin: 0 auto; padding: 72px 0 92px; }
 .page h1 { font-size: clamp(2.1rem, 4vw, 3.4rem); letter-spacing: -.045em; line-height: 1.08; margin: 0 0 28px; }
 .page h2 { margin-top: 42px; font-size: 1.4rem; letter-spacing: -.025em; }
+.page h3 { margin: 0; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
 .page p, .page li { color: #314552; }
 .page li + li { margin-top: 8px; }
 .page a[href^="http"] { font-weight: 650; }
+.page-intro { margin: -10px 0 40px; max-width: 690px; font-size: 1.13rem; line-height: 1.65; }
+.case-study, .note-card { padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--white); box-shadow: 0 8px 22px rgba(16, 32, 45, .045); }
+.case-study + .case-study, .note-card + .note-card { margin-top: 18px; }
+.case-study h2, .note-card h2 { margin: 7px 0 21px; }
+.case-kicker { margin: 0; color: var(--accent-dark) !important; font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.case-grid p { margin: 7px 0 0; font-size: .94rem; line-height: 1.55; }
+.page-note { margin-top: 26px; color: var(--muted) !important; font-size: .88rem; }
 .site-footer { border-top: 1px solid var(--line); background: var(--white); color: var(--muted); font-size: .83rem; }
 .footer-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .footer-inner div { display: flex; flex-wrap: wrap; gap: 17px; }
@@ -111,6 +120,9 @@ a:hover { color: var(--accent); }
   .home-nav { padding: 38px 0 48px; }
   .nav-card { min-height: 108px; padding: 19px; }
   .page { padding: 46px 0 62px; }
+  .page-intro { margin-bottom: 28px; font-size: 1.03rem; }
+  .case-study, .note-card { padding: 21px; }
+  .case-grid { grid-template-columns: 1fr; gap: 17px; }
   .nav-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { padding: 21px 0; align-items: flex-start; flex-direction: column; }
 }
