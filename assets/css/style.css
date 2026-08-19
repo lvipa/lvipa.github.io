@@ -48,7 +48,11 @@ a:hover { color: var(--accent); }
 .hero-copy, .hero-photo-wrap { min-width: 0; }
 .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--accent-dark); text-transform: uppercase; letter-spacing: .12em; font-size: .74rem; font-weight: 800; }
 .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--accent); }
-.hero h1 { max-width: 660px; margin: 17px 0; font-size: clamp(2.65rem, 5.5vw, 5rem); letter-spacing: -.055em; line-height: 1.01; }
+.hero-manifesto { max-width: 660px; margin: 17px 0; letter-spacing: -.06em; line-height: .96; }
+.hero-word { display: block; white-space: nowrap; }
+.hero-word--large { font-size: clamp(2.9rem, 5.6vw, 5rem); }
+.hero-word--medium { font-size: clamp(2.55rem, 4.8vw, 4.2rem); }
+.hero-word--small { font-size: clamp(2.2rem, 4vw, 3.45rem); }
 .hero p { max-width: 610px; color: var(--muted); font-size: 1.12rem; margin: 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 17px; margin-top: 30px; font-size: .88rem; font-weight: 650; }
@@ -92,7 +96,10 @@ a:hover { color: var(--accent); }
   .hero-photo-wrap { width: min(172px, 55vw); max-width: 100%; justify-self: start; order: 2; }
   .hero-photo-wrap::before { inset: 8px -8px -8px 8px; border-radius: 15px; }
   .hero-photo { aspect-ratio: 1; border-radius: 15px; object-position: 50% 26%; }
-  .hero h1 { margin: 13px 0 15px; font-size: clamp(2.35rem, 11vw, 3.1rem); letter-spacing: -.048em; line-height: 1.04; }
+  .hero-manifesto { margin: 13px 0 15px; letter-spacing: -.055em; line-height: .98; }
+  .hero-word--large { font-size: clamp(1.95rem, 10.5vw, 3.1rem); }
+  .hero-word--medium { font-size: clamp(1.78rem, 9.1vw, 2.72rem); }
+  .hero-word--small { font-size: clamp(1.6rem, 8vw, 2.36rem); }
   .hero p { font-size: .98rem; line-height: 1.57; }
   .hero-actions { display: grid; gap: 10px; margin-top: 24px; }
   .hero-actions .button { width: 100%; min-height: 48px; }

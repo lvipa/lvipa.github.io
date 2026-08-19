@@ -43,8 +43,8 @@
     <header class="site-header">
       <div class="shell header-inner">
         <a class="brand" href="{{ home_url | relative_url }}" aria-label="{% if is_english %}Homepage{% else %}На главную{% endif %}">
-          <span class="brand-mark">IL</span>
-          <span class="brand-copy"><strong>Иван Липатов</strong><small>DevOps Engineer</small></span>
+          <span class="brand-mark">{% if is_english %}IV{% else %}ИВ{% endif %}</span>
+          <span class="brand-copy"><strong>{% if is_english %}IVAN{% else %}ИВАН{% endif %}</strong><small>DevOps Engineer</small></span>
         </a>
         <nav class="site-nav" aria-label="{% if is_english %}Primary navigation{% else %}Основная навигация{% endif %}">
           <a href="{{ about_url | relative_url }}"{% if page.url == about_url %} aria-current="page"{% endif %}>{% if is_english %}About{% else %}Обо мне{% endif %}</a>

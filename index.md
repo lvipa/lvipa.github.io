@@ -8,7 +8,11 @@ translation: /en/
 <section class="hero shell">
   <div class="hero-copy">
     <div class="eyebrow">Senior DevOps / Infrastructure Engineer</div>
-    <h1>Инфраструктура. Автоматизация. Надёжность.</h1>
+    <h1 class="hero-manifesto">
+      <span class="hero-word hero-word--large">Инфраструктура.</span>
+      <span class="hero-word hero-word--medium">Автоматизация.</span>
+      <span class="hero-word hero-word--small">Надёжность.</span>
+    </h1>
     <p>Развиваю и сопровождаю Linux/Windows-инфраструктуру, CI/CD-процессы и контейнерные сервисы. Здесь — мой профессиональный профиль и точки для связи.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://t.me/lvipa">Написать в Telegram</a>
