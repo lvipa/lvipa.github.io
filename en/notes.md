@@ -16,6 +16,12 @@ translation: /notes/
 
 <article class="note-card"><p class="case-kicker">Chatbots · MCP/skills</p><h2>A good chatbot also helps find an old decision</h2><p>Save messages, add search, show a few replies around a matching phrase — and a chat becomes a useful knowledge base. Codex can retrieve that fragment through a connected tool and answer with a source.</p></article>
 
+<article class="note-card"><p class="case-kicker">MikroTik · proxy-home</p><h2>Not all home traffic needs to go through a proxy</h2><p>Selected destinations can go to a separate gateway while everything else works as usual. Keep the rules narrow, check their counters and save a router backup before a change.</p></article>
+
+<article class="note-card"><p class="case-kicker">Telegram · ISPmanager</p><h2>Build settings instead of copying them by hand</h2><p>One set of source data can become profiles for different apps, be checked and published through ISPmanager. Short Telegram messages then show whether the router and gateway are doing well.</p></article>
+
+<article class="note-card"><p class="case-kicker">Messenger · proxy-home</p><h2>A new service beside the gateway should not control the gateway</h2><p>Give the messenger its own address and Docker environment. Chats and authentication can then live next to proxy-home without access to its routes, TUN interface or firewall rules.</p></article>
+
 <article class="note-card"><p class="case-kicker">Checks in CI</p><h2>A security check should not get in the way of a release</h2><p>It is better to run a check only where it is needed and get a separate, readable report. Then it helps developers instead of becoming another mysterious red build.</p></article>
 
 <article class="note-card"><p class="case-kicker">Deployment</p><h2>A deployment should be able to run twice</h2><p>If a configuration setting is missing, the script can create it. There is no need to fill a template with dozens of empty defaults, and a repeat run is no longer a gamble.</p></article>
