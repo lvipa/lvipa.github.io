@@ -2,7 +2,7 @@ title: "Иван Липатов — DevOps Engineer"
 description: "Senior DevOps / Infrastructure Engineer: CI/CD, Linux, облачная и кластерная инфраструктура"
 lang: ru
 url: "https://lvipa.github.io"
-baseurl: "/jekyll-learning-site"
+baseurl: ""
 image: "/assets/images/ivan-lipatov.jpeg"
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
