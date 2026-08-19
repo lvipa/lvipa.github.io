@@ -11,13 +11,14 @@ translation: /
     <div class="eyebrow">Senior DevOps / Infrastructure Engineer</div>
     <h1 class="hero-manifesto">
       <span class="hero-word hero-word--large">Infrastructure.</span>
-      <span class="hero-word hero-word--medium">Automation.</span>
-      <span class="hero-word hero-word--small">Reliability.</span>
+      <span class="hero-word hero-word--medium">Versioning.</span>
+      <span class="hero-word hero-word--small">Automation.</span>
+      <span class="hero-word hero-word--xsmall">Networking.</span>
     </h1>
     <p>I build and operate Linux/Windows infrastructure, CI/CD processes and containerized services. This is my professional profile and a way to get in touch.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://t.me/lvipa">Message on Telegram</a>
-      <a class="button button-secondary" href="https://kinel.hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959">View résumé</a>
+      <a class="button button-secondary" href="https://kinel.hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959">View resume</a>
     </div>
     <div class="profile-links" aria-label="Professional profiles">
       <a href="https://www.linkedin.com/in/lvipa/">LinkedIn</a>

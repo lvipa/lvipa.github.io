@@ -43,8 +43,8 @@
     <header class="site-header">
       <div class="shell header-inner">
         <a class="brand" href="{{ home_url | relative_url }}" aria-label="{% if is_english %}Homepage{% else %}На главную{% endif %}">
-          <span class="brand-mark">{% if is_english %}IV{% else %}ИВ{% endif %}</span>
-          <span class="brand-copy"><strong>{% if is_english %}IVAN{% else %}ИВАН{% endif %}</strong><small>DevOps Engineer</small></span>
+          <span class="brand-mark">{% if is_english %}IL{% else %}ИЛ{% endif %}</span>
+          <span class="brand-copy"><strong>{% if is_english %}Ivan Lipatov{% else %}Иван Липатов{% endif %}</strong><small>DevOps Engineer</small></span>
         </a>
         <nav class="site-nav" aria-label="{% if is_english %}Primary navigation{% else %}Основная навигация{% endif %}">
           <a href="{{ about_url | relative_url }}"{% if page.url == about_url %} aria-current="page"{% endif %}>{% if is_english %}About{% else %}Обо мне{% endif %}</a>
@@ -52,7 +52,13 @@
           <a href="{{ notes_url | relative_url }}"{% if page.url == notes_url %} aria-current="page"{% endif %}>{% if is_english %}Notes{% else %}Заметки{% endif %}</a>
           <a href="{{ contact_url | relative_url }}"{% if page.url == contact_url %} aria-current="page"{% endif %}>{% if is_english %}Contact{% else %}Контакты{% endif %}</a>
         </nav>
-        <a class="language-switch" href="{{ page.translation | relative_url }}" hreflang="{% if is_english %}ru{% else %}en{% endif %}">{% if is_english %}RU{% else %}EN{% endif %}</a>
+        <nav class="language-switcher" aria-label="{% if is_english %}Language{% else %}Язык{% endif %}">
+          {% if is_english %}
+            <a href="{{ page.translation | relative_url }}" hreflang="ru">RU</a><span aria-hidden="true">/</span><a href="{{ page.url | relative_url }}" hreflang="en" aria-current="page">EN</a>
+          {% else %}
+            <a href="{{ page.url | relative_url }}" hreflang="ru" aria-current="page">RU</a><span aria-hidden="true">/</span><a href="{{ page.translation | relative_url }}" hreflang="en">EN</a>
+          {% endif %}
+        </nav>
         <a class="header-cta" href="https://t.me/lvipa">{% if is_english %}Message{% else %}Написать{% endif %}</a>
       </div>
     </header>
