@@ -8,7 +8,7 @@ translation: /about/
 
 # About
 
-I am a Senior DevOps / Infrastructure Engineer with more than seven years of experience operating, automating and evolving production-like infrastructure. I work across CI/CD, server infrastructure, containerization, databases and observability.
+I am a Senior DevOps / Infrastructure Engineer with 8+ years in IT and 6+ years operating infrastructure, CI/CD and service automation. I work across applications, server infrastructure, containerization, databases and observability.
 
 ## What I do
 
@@ -20,6 +20,6 @@ I am a Senior DevOps / Infrastructure Engineer with more than seven years of exp
 
 ## Experience in numbers
 
-My resume includes CI/CD work for 50+ applications and support for 30+ Linux/Windows servers, Docker containers and S3-compatible storage.
+My experience includes CI/CD for 50+ services, 30+ Linux/Windows servers and automation that reduced manual effort by 50–70%. In 2026, I also commissioned three 10-node HPC clusters for engineering and research workloads.
 
-Learn more on [LinkedIn](https://www.linkedin.com/in/lvipa/) or [HH.ru](https://hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959). The fastest way to reach me is [Telegram](https://t.me/lvipa).
+Explore the detailed [resume page]({{ '/en/resume/' | relative_url }}), [LinkedIn](https://www.linkedin.com/in/lvipa/) or [HH.ru](https://hh.ru/resume/db09e170ff040672c60039ed1f45784f6b6959). The fastest way to reach me is [Telegram](https://t.me/lvipa).

@@ -18,6 +18,13 @@ translation: /en/resume/
     <img src="{{ '/assets/images/ivan-lipatov.jpeg' | relative_url }}" alt="Иван Липатов" class="resume-photo">
   </div>
 
+  <section class="resume-highlights" aria-label="Ключевые результаты">
+    <div><strong>50+</strong><span>сервисов в TeamCity CI/CD</span></div>
+    <div><strong>30+</strong><span>Linux- и Windows-серверов</span></div>
+    <div><strong>50–70%</strong><span>меньше ручных операций</span></div>
+    <div><strong>3 × 10</strong><span>узлов в HPC-кластерах</span></div>
+  </section>
+
   <div class="resume-layout">
     <div class="resume-main">
       <h2>Опыт работы</h2>
@@ -25,11 +32,12 @@ translation: /en/resume/
       <article class="resume-job">
         <h3>Senior DevOps &amp; Infrastructure Engineer</h3>
         <p class="resume-company">СМС-Информационные технологии, ООО</p>
-        <p class="resume-meta">Сентябрь 2020 - н.в. · Самара, Россия</p>
+        <p class="resume-meta">Февраль 2024 - н.в. · Самара, Россия</p>
         <ul>
-          <li>CI/CD в TeamCity для 50+ сервисов: сборка, тестирование, публикация артефактов и деплой в Linux- и Windows-окружения.</li>
-          <li>Автоматизация деплоя и эксплуатационных операций на PowerShell, Bash и Python; снижение ручного участия на 50-70%.</li>
-          <li>Сопровождение 30+ Linux- и Windows-серверов, Docker-нагрузок, PostgreSQL и S3/MinIO.</li>
+          <li>Развил и стандартизировал TeamCity CI/CD для 50+ сервисов: сборка, тестирование, публикация артефактов и деплой .NET- и frontend-приложений в Linux- и Windows-окружения.</li>
+          <li>Перевёл очистку и ротацию файлов, проверки сервисов и БД, а также сбор диагностики в сценарии PowerShell, Bash и Python; ручное участие снизилось на 50–70%.</li>
+          <li>Стандартизировал окружения, структуру каталогов, логирование и health-check'и: релизные операции стали в 2–3 раза быстрее и устойчивее.</li>
+          <li>Сопровождаю 30+ Linux- и Windows-серверов, Docker, PostgreSQL и S3/MinIO; настраиваю Nginx/IIS reverse proxy, резервное копирование и наблюдаемость через Zabbix, Grafana, ELK и Graylog.</li>
         </ul>
       </article>
 
@@ -38,17 +46,29 @@ translation: /en/resume/
         <p class="resume-company">Самарский государственный технический университет</p>
         <p class="resume-meta">Март 2026 - Июнь 2026 · Параллельный проект</p>
         <ul>
-          <li>Развёртывание и сопровождение трёх 10-узловых HPC-кластеров для инженерных и научных расчётов.</li>
-          <li>Ceph, Slurm, shared storage, SONiC, VLAN, IPMI, iDRAC, BMC и Redfish API.</li>
+          <li>Ввёл в эксплуатацию три HPC-кластера по 10 серверов для инженерных и научных расчётов, обеспечив централизованное управление ресурсами и стабильную работу под нагрузкой.</li>
+          <li>Развернул Ceph и Slurm: shared и scratch storage, пользовательские рабочие пространства, очереди задач для VASP и Gaussian.</li>
+          <li>Настраивал SONiC и Mellanox/NVIDIA Ethernet: VLAN, Jumbo Frames и MTU; работал с IPMI, iDRAC, BMC и Redfish API.</li>
         </ul>
       </article>
 
       <article class="resume-job">
-        <h3>Карьерный рост в СМС-ИТ</h3>
-        <p class="resume-company">Старший специалист службы внедрения → специалист службы внедрения</p>
-        <p class="resume-meta">Сентябрь 2020 - Январь 2024</p>
+        <h3>Старший специалист службы внедрения</h3>
+        <p class="resume-company">СМС-Информационные технологии, ООО</p>
+        <p class="resume-meta">Декабрь 2021 - Январь 2024 · Самара, Россия</p>
         <ul>
-          <li>Enterprise-системы для крупных заказчиков, SCADA и аналитические платформы; Windows/Debian, IIS, .NET Core, PostgreSQL, Redis, Docker, Ceph и MinIO.</li>
+          <li>Решил сложный инцидент с деградацией корпоративной системы на нескольких контурах: диагностировал цепочку от приложения до БД и CI/CD, устранил причины и стандартизировал конфигурации.</li>
+          <li>Внедрял и сопровождал enterprise-систему для крупных заказчиков: Windows/Debian, IIS, .NET Core, PostgreSQL, Redis Cluster, Docker, Ceph, MinIO и S3.</li>
+        </ul>
+      </article>
+
+      <article class="resume-job">
+        <h3>Специалист службы внедрения</h3>
+        <p class="resume-company">СМС-Информационные технологии, ООО</p>
+        <p class="resume-meta">Сентябрь 2020 - Ноябрь 2021 · Самара, Россия</p>
+        <ul>
+          <li>Подготавливал тестовые и серверные площадки для SCADA и аналитических систем; проводил нагрузочное и стресс-тестирование, анализировал метрики и устранял узкие места.</li>
+          <li>Администрировал Windows Server и PostgreSQL, участвовал в настройке Docker, Ceph, MinIO, S3-хранилищ, мониторинга и резервного копирования.</li>
         </ul>
       </article>
 
@@ -64,7 +84,7 @@ translation: /en/resume/
       <h2>Образование</h2>
       <p><strong>Самарский государственный технический университет</strong><br>Высшее образование, математическое обеспечение и администрирование информационных систем<br>2017</p>
       <h2>Навыки</h2>
-      <p>TeamCity, CI/CD, Docker, Docker Compose, Linux, Windows Server, Active Directory, DNS, GPO, PostgreSQL, Redis, S3, MinIO, Ceph, Nginx, Zabbix, Grafana, ELK, Graylog, Slurm, SONiC, IPMI/iDRAC.</p>
+      <p><strong>CI/CD и автоматизация:</strong> TeamCity, Docker, Docker Compose, Bash, PowerShell, Python<br><strong>Платформы:</strong> Linux, Windows Server, AD, DNS, GPO, IIS<br><strong>Данные и хранение:</strong> PostgreSQL, Redis, S3/MinIO, Ceph<br><strong>Наблюдаемость и сеть:</strong> Nginx, Zabbix, Grafana, ELK, Graylog, Slurm, SONiC, IPMI/iDRAC</p>
       <h2>Языки</h2>
       <p>Русский — родной<br>Английский — B1 (Intermediate)</p>
       <h2>Скачать PDF</h2>

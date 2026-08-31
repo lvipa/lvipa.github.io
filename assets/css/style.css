@@ -94,6 +94,10 @@ a:hover { color: var(--accent); }
 .resume-head p:not(.resume-kicker):not(.resume-links) { margin: 0; color: var(--muted); }
 .resume-photo { width: 112px; height: 112px; object-fit: cover; border-radius: 14px; box-shadow: var(--shadow); }
 .resume-links { display: flex; flex-wrap: wrap; gap: 13px; margin: 15px 0 0; font-weight: 750; }
+.resume-highlights { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 28px; }
+.resume-highlights div { display: grid; gap: 2px; min-height: 104px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
+.resume-highlights strong { color: var(--accent-dark); font-size: 1.65rem; line-height: 1.1; letter-spacing: -.04em; }
+.resume-highlights span { color: var(--muted); font-size: .78rem; line-height: 1.35; font-weight: 650; }
 .resume-layout { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(230px, .75fr); gap: clamp(36px, 6vw, 76px); margin-top: 44px; }
 .resume-main h2, .resume-side h2 { margin: 0 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); font-size: 1.32rem; letter-spacing: -.025em; }
 .resume-job { margin: 0 0 29px; }
@@ -141,6 +145,8 @@ a:hover { color: var(--accent); }
   .resume-page { width: min(100% - 32px, 780px); padding: 46px 0 62px; }
   .resume-head { gap: 20px; padding-bottom: 22px; }
   .resume-photo { width: 82px; height: 82px; border-radius: 11px; }
+  .resume-highlights { grid-template-columns: 1fr 1fr; margin-top: 22px; }
+  .resume-highlights div { min-height: 92px; padding: 15px; }
   .resume-layout { grid-template-columns: 1fr; gap: 22px; margin-top: 32px; }
   .page-intro { margin-bottom: 28px; font-size: 1.03rem; }
   .case-study, .note-card { padding: 21px; }
