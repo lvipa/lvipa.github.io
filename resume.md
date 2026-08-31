@@ -19,10 +19,11 @@ translation: /en/resume/
   </div>
 
   <section class="resume-highlights" aria-label="Ключевые результаты">
+    <div><strong>8+ лет</strong><span>общего опыта в ИТ</span></div>
+    <div><strong>6 лет</strong><span>опыта в СМС-ИТ</span></div>
     <div><strong>50+</strong><span>сервисов в TeamCity CI/CD</span></div>
     <div><strong>30+</strong><span>Linux- и Windows-серверов</span></div>
     <div><strong>50–70%</strong><span>меньше ручных операций</span></div>
-    <div><strong>6 лет</strong><span>непрерывного опыта в СМС-ИТ</span></div>
   </section>
 
   <div class="resume-layout">
@@ -31,7 +32,7 @@ translation: /en/resume/
 
       <section class="resume-employer-group" aria-label="Основной опыт в СМС-ИТ">
         <header class="resume-employer-head">
-          <p>Основной опыт · Сентябрь 2020 - н.в.</p>
+          <p>Опыт в СМС-ИТ · 6 лет · Сентябрь 2020 - н.в.</p>
           <h3>СМС-Информационные технологии, ООО</h3>
           <span>Рост от специалиста службы внедрения до Senior DevOps &amp; Infrastructure Engineer</span>
         </header>

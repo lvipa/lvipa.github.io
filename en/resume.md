@@ -19,10 +19,11 @@ translation: /resume/
   </div>
 
   <section class="resume-highlights" aria-label="Key results">
+    <div><strong>8+ years</strong><span>total IT experience</span></div>
+    <div><strong>6 years</strong><span>experience at SMS-IT</span></div>
     <div><strong>50+</strong><span>services in TeamCity CI/CD</span></div>
     <div><strong>30+</strong><span>Linux and Windows servers</span></div>
     <div><strong>50–70%</strong><span>fewer manual operations</span></div>
-    <div><strong>6 years</strong><span>continuous experience at SMS-IT</span></div>
   </section>
 
   <div class="resume-layout">
@@ -30,7 +31,7 @@ translation: /resume/
       <h2>Work experience</h2>
       <section class="resume-employer-group" aria-label="Core experience at SMS-IT">
         <header class="resume-employer-head">
-          <p>Core experience · Sep 2020 - present</p>
+          <p>Experience at SMS-IT · 6 years · Sep 2020 - present</p>
           <h3>SMS-Information Technologies LLC</h3>
           <span>Progression from Implementation Service Specialist to Senior DevOps &amp; Infrastructure Engineer</span>
         </header>

@@ -8,7 +8,7 @@ translation: /about/
 
 # About
 
-I am a Senior DevOps / Infrastructure Engineer with 8+ years in IT. Since 2020, I have worked at SMS-Information Technologies on CI/CD, infrastructure operations and service automation.
+I am a Senior DevOps / Infrastructure Engineer with 8+ years of total IT experience, including 6 years at SMS-Information Technologies. Since 2020, I have worked there on CI/CD, infrastructure operations and service automation.
 
 ## What I do
 
