@@ -46,7 +46,7 @@ translation: /projects/
   <div class="case-grid">
     <div><h3>Tools</h3><ul><li>Trivy for SCA and containers.</li><li>Semgrep and CodeQL for SAST.</li><li>Normalised results and consolidated reporting.</li></ul></div>
     <div><h3>Implementation</h3><ul><li>Targeted scans by project and stack.</li><li>Separate reports for frontend, .NET, Python and legacy code.</li><li>Reproducible CVE-catalogue export with SHA-256.</li></ul></div>
-    <div><h3>Outcome</h3><p>Security became a clear quality gate in CI. <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">Public example ↗</a></p></div>
+    <div><h3>Outcome</h3><p>Security became a clear quality gate in CI. <a href="https://github.com/lvipa/security-scan-orchestrator" target="_blank" rel="noopener">Security Scan Orchestrator ↗</a> · <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">FSTEC exporter ↗</a></p></div>
   </div>
 </section>
 
@@ -56,7 +56,7 @@ translation: /projects/
   <div class="case-grid">
     <div><h3>Speech-to-text</h3><ul><li>FastAPI + VOSK + ffmpeg.</li><li>Model choice, word timings, punctuation and metrics.</li><li>Linux/Windows deployment and load testing.</li></ul></div>
     <div><h3>Task context</h3><ul><li>Webhook bot, SQLite FTS5 and search API.</li><li>Returns a message fragment with date and author.</li><li>Connects to Codex through a skill/MCP approach.</li></ul></div>
-    <div><h3>Public code</h3><p><a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a><br><a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">Context search ↗</a></p></div>
+    <div><h3>Public code</h3><p><a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a><br><a href="https://github.com/lvipa/meeting-transcription-service" target="_blank" rel="noopener">Meeting transcription service ↗</a><br><a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">Context search ↗</a></p></div>
   </div>
 </section>
 
@@ -73,8 +73,10 @@ translation: /projects/
 <h2 class="project-section-title">Public tools</h2>
 <div class="project-links">
   <a class="project-link" href="https://github.com/lvipa/teamcity-scripts" target="_blank" rel="noopener"><strong>TeamCity REST API utilities ↗</strong><span>PowerShell tools for build-configuration and dependency analysis.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/teamcity-branch-sync" target="_blank" rel="noopener"><strong>TeamCity Branch Sync ↗</strong><span>Synchronises branch filters and build parameters through the REST API.</span></a>
   <a class="project-link" href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener"><strong>Platform Ops Lab ↗</strong><span>A sanitised example of branch environments, readiness gates and a runbook.</span></a>
   <a class="project-link" href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener"><strong>DevOps Delivery Lab ↗</strong><span>Release validation, health checks and an operations checklist.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/s3-retention-cleanup" target="_blank" rel="noopener"><strong>S3 Retention Cleanup ↗</strong><span>PowerShell utility for safe object cleanup with dry-run support and logging.</span></a>
   <a class="project-link" href="https://github.com/lvipa/minichat-platform" target="_blank" rel="noopener"><strong>MiniChat Platform ↗</strong><span>A personal full-stack project: .NET, Angular PWA, Keycloak and SignalR.</span></a>
 </div>
 

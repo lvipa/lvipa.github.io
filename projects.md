@@ -46,7 +46,7 @@ translation: /en/projects/
   <div class="case-grid">
     <div><h3>Инструменты</h3><ul><li>Trivy для SCA и контейнеров.</li><li>Semgrep и CodeQL для SAST.</li><li>Нормализация результатов и сводная отчётность.</li></ul></div>
     <div><h3>Реализация</h3><ul><li>Выборочная проверка нужного проекта и стека.</li><li>Раздельные отчёты для frontend, .NET, Python и legacy-кода.</li><li>Воспроизводимая выгрузка CVE-каталога с SHA-256.</li></ul></div>
-    <div><h3>Результат</h3><p>Проверка безопасности стала отдельным понятным quality gate. <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">Открытый пример ↗</a></p></div>
+    <div><h3>Результат</h3><p>Проверка безопасности стала отдельным понятным quality gate. <a href="https://github.com/lvipa/security-scan-orchestrator" target="_blank" rel="noopener">Security Scan Orchestrator ↗</a> · <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">FSTEC exporter ↗</a></p></div>
   </div>
 </section>
 
@@ -56,7 +56,7 @@ translation: /en/projects/
   <div class="case-grid">
     <div><h3>Speech-to-text</h3><ul><li>FastAPI + VOSK + ffmpeg.</li><li>Выбор модели, таймкоды, пунктуация, метрики.</li><li>Linux/Windows-развёртывание и нагрузочные замеры.</li></ul></div>
     <div><h3>Контекст для задач</h3><ul><li>Webhook-бот, SQLite FTS5 и API поиска.</li><li>Выдача фрагмента с датой и автором.</li><li>Подключение к Codex через skill/MCP-подход.</li></ul></div>
-    <div><h3>Открытый код</h3><p><a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a><br><a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">Поиск контекста ↗</a></p></div>
+    <div><h3>Открытый код</h3><p><a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a><br><a href="https://github.com/lvipa/meeting-transcription-service" target="_blank" rel="noopener">Сервис транскрибации ↗</a><br><a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">Поиск контекста ↗</a></p></div>
   </div>
 </section>
 
@@ -73,8 +73,10 @@ translation: /en/projects/
 <h2 class="project-section-title">Публичные инструменты</h2>
 <div class="project-links">
   <a class="project-link" href="https://github.com/lvipa/teamcity-scripts" target="_blank" rel="noopener"><strong>TeamCity REST API utilities ↗</strong><span>PowerShell-инструменты для анализа конфигураций и зависимостей сборок.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/teamcity-branch-sync" target="_blank" rel="noopener"><strong>TeamCity Branch Sync ↗</strong><span>Синхронизация branch filters и параметров сборок через REST API.</span></a>
   <a class="project-link" href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener"><strong>Platform Ops Lab ↗</strong><span>Обезличенный пример тестовых сред, readiness-проверок и runbook.</span></a>
   <a class="project-link" href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener"><strong>DevOps Delivery Lab ↗</strong><span>Проверки релизов, health-check и эксплуатационный чек-лист.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/s3-retention-cleanup" target="_blank" rel="noopener"><strong>S3 Retention Cleanup ↗</strong><span>PowerShell-утилита для безопасной очистки объектов с dry-run и логированием.</span></a>
   <a class="project-link" href="https://github.com/lvipa/minichat-platform" target="_blank" rel="noopener"><strong>MiniChat Platform ↗</strong><span>Личный full-stack проект: .NET, Angular PWA, Keycloak и SignalR.</span></a>
 </div>
 
