@@ -8,65 +8,65 @@ translation: /projects/
 
 # Projects
 
-<p class="page-intro">Not every ticket deserves its own case study. These are the stories that best show how I work: make delivery predictable, remove repetitive work, and leave a clear process behind for the team.</p>
+<p class="page-intro">Key implementations from my main role and selected projects. Kept concise: what was built and what it changed. Company names, hosts and internal data are intentionally omitted.</p>
 
 <section class="case-study">
   <p class="case-kicker">Core experience · TeamCity · CI/CD</p>
-  <h2>Made delivery for 50+ services calm and repeatable</h2>
+  <h2>Delivery for 50+ services</h2>
   <div class="case-grid">
-    <div><h3>Starting point</h3><p>.NET and frontend services had different build and deployment steps. The failure was often not in the code, but in a manual action or an environment difference.</p></div>
-    <div><h3>What changed</h3><p>I brought TeamCity CI/CD to a common approach: builds, tests, artefacts and deployment to Linux and Windows. Repetitive work moved into PowerShell, Bash and Python automation.</p></div>
-    <div><h3>Outcome</h3><p>Release operations became 2–3 times faster, with 50–70% less manual involvement. When something failed, the team could see which stage needed attention. <a href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener">Public delivery patterns ↗</a></p></div>
+    <div><h3>Implementation</h3><ul><li>TeamCity build/deploy configurations for .NET and frontend.</li><li>Build → test → artefact publishing → deployment to Linux/Windows.</li><li>Repeatable steps in PowerShell, Bash and Python.</li></ul></div>
+    <div><h3>Platform patterns</h3><ul><li>Build templates and parameters instead of manual runbooks.</li><li>Branch filters, configuration dependencies and artefact-cleanup rules.</li><li>Change-impact analysis through the TeamCity REST API.</li></ul></div>
+    <div><h3>Outcome</h3><p>Release operations became 2–3 times faster with 50–70% less manual involvement. <a href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener">Public delivery patterns ↗</a></p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">Platform operations · Docker · PostgreSQL</p>
-  <h2>Built test environments that do not need to be assembled by hand</h2>
+  <h2>Branch environments and automated tests</h2>
   <div class="case-grid">
-    <div><h3>The need</h3><p>Branches, integrations and automated tests all need isolated environments. When the database, access and services are prepared manually, testing waits for infrastructure.</p></div>
-    <div><h3>The approach</h3><p>I prepared TeamCity templates for Linux environments with Docker and PostgreSQL: restoring a test database, publishing the application, configuring access and running UI/API tests.</p></div>
-    <div><h3>Outcome</h3><p>The path from a branch to a ready environment became repeatable. Build, access and infrastructure failures show up at a specific pipeline stage instead of after a long manual investigation. <a href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener">Public example and runbook ↗</a></p></div>
+    <div><h3>Implementation</h3><ul><li>Linux environments: Docker Compose, PostgreSQL and application configuration.</li><li>Restore a known test database before each run.</li><li>UI/API execution, including Playwright.</li></ul></div>
+    <div><h3>Access and lifecycle</h3><ul><li>Keycloak/OpenID integration for test environments.</li><li>Provisioning from a branch or TeamCity template.</li><li>Readiness gates, logs and artefacts for diagnosis.</li></ul></div>
+    <div><h3>Outcome</h3><p>An environment can be rebuilt without a manual sequence of steps. <a href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener">Public example and runbook ↗</a></p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">Reliability · PostgreSQL · S3/MinIO · Observability</p>
-  <h2>Restored services and made the next incident easier</h2>
+  <h2>Service and data reliability</h2>
   <div class="case-grid">
-    <div><h3>Reality</h3><p>Across 30+ Linux and Windows servers, a problem rarely lives in one place. It can sit at the boundary of the application, network, reverse proxy, database and CI/CD.</p></div>
-    <div><h3>How I worked</h3><p>I investigated the full path, aligned environment configuration, and put in health checks, logging and backups for PostgreSQL, configuration and files in S3/MinIO.</p></div>
-    <div><h3>What remained</h3><p>Not just a restored service, but a clearer operating picture: metrics and logs in Zabbix, Grafana, ELK and Graylog, explicit checkpoints and a recovery path.</p></div>
+    <div><h3>Operations</h3><ul><li>30+ Linux/Windows servers, containers, Nginx/IIS.</li><li>PostgreSQL, Redis, S3/MinIO and file storage.</li><li>AD, DNS, GPO and service identities.</li></ul></div>
+    <div><h3>Control and recovery</h3><ul><li>Backups for databases, configuration and files.</li><li>Health checks, consistent directories and logging.</li><li>Zabbix, Grafana, ELK and Graylog for metrics and logs.</li></ul></div>
+    <div><h3>Outcome</h3><p>Complex incidents are investigated across the application → OS → network → proxy → database → CI/CD path, rather than by guesswork.</p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">DevSecOps · Security automation</p>
-  <h2>Brought security checks into the normal development path</h2>
+  <h2>Security checks in CI/CD</h2>
   <div class="case-grid">
-    <div><h3>Why</h3><p>Vulnerability checks help only when their result is easy to understand before release, not when someone has to search through several unrelated reports.</p></div>
-    <div><h3>What I did</h3><p>Connected Trivy, Semgrep, CodeQL and dependency analysis for different stacks. I also prepared a reproducible export of a public vulnerability catalogue with SHA-256 verification.</p></div>
-    <div><h3>Outcome</h3><p>Checks became a clear CI stage instead of a noisy red build. <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">Public automation example ↗</a></p></div>
+    <div><h3>Tools</h3><ul><li>Trivy for SCA and containers.</li><li>Semgrep and CodeQL for SAST.</li><li>Normalised results and consolidated reporting.</li></ul></div>
+    <div><h3>Implementation</h3><ul><li>Targeted scans by project and stack.</li><li>Separate reports for frontend, .NET, Python and legacy code.</li><li>Reproducible CVE-catalogue export with SHA-256.</li></ul></div>
+    <div><h3>Outcome</h3><p>Security became a clear quality gate in CI. <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">Public example ↗</a></p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">Self-hosted AI · FastAPI · MCP</p>
-  <h2>Built local AI services that help with everyday work</h2>
+  <h2>Self-hosted AI services</h2>
   <div class="case-grid">
-    <div><h3>Two practical cases</h3><p>The first turns a recording into text through an HTTP API. The second finds earlier decisions and task context in working chats.</p></div>
-    <div><h3>What I built</h3><p>A FastAPI service using VOSK, ffmpeg, timestamps and observability; plus a webhook bot, full-text search and MCP-style context retrieval for Codex.</p></div>
-    <div><h3>Why it matters</h3><p>Neither is an AI demo for its own sake: both save time on routine work and stay self-hosted. <a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a> · <a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">context search ↗</a></p></div>
+    <div><h3>Speech-to-text</h3><ul><li>FastAPI + VOSK + ffmpeg.</li><li>Model choice, word timings, punctuation and metrics.</li><li>Linux/Windows deployment and load testing.</li></ul></div>
+    <div><h3>Task context</h3><ul><li>Webhook bot, SQLite FTS5 and search API.</li><li>Returns a message fragment with date and author.</li><li>Connects to Codex through a skill/MCP approach.</li></ul></div>
+    <div><h3>Public code</h3><p><a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a><br><a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">Context search ↗</a></p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">Short project · HPC · Slurm · Ceph</p>
-  <h2>Prepared a compute cluster for handover to operations</h2>
+  <h2>HPC cluster: production handover</h2>
   <div class="case-grid">
-    <div><h3>Context</h3><p>This was a separate university project, not my primary role. The clusters needed to be ready for safe day-to-day use.</p></div>
-    <div><h3>What I did</h3><p>Checked Slurm and CephFS, set up a backup controller, CPU and memory limits, shared storage, and templates for VASP and Gaussian calculations.</p></div>
-    <div><h3>Outcome</h3><p>A working queue, verified test calculations and a concise operational guide — without relying on the person who originally configured the cluster.</p></div>
+    <div><h3>Scope</h3><p>Short university project: three 10-node clusters.</p></div>
+    <div><h3>Implementation</h3><ul><li>Ceph/CephFS, Slurm, shared storage and scratch.</li><li>IPMI/iDRAC, BMC, Redfish API and inventory.</li><li>SONiC, Mellanox/NVIDIA Ethernet, VLAN and Jumbo Frames.</li></ul></div>
+    <div><h3>Outcome</h3><p>Working queues, verified VASP/Gaussian calculations and operational documentation.</p></div>
   </div>
 </section>
 

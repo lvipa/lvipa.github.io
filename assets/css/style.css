@@ -86,6 +86,8 @@ a:hover { color: var(--accent); }
 .case-kicker { margin: 0; color: var(--accent-dark) !important; font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .case-grid p { margin: 7px 0 0; font-size: .94rem; line-height: 1.55; }
+.case-grid ul { margin: 7px 0 0; padding-left: 18px; color: #314552; font-size: .92rem; line-height: 1.5; }
+.case-grid li + li { margin-top: 5px; }
 .page-note { margin-top: 26px; color: var(--muted) !important; font-size: .88rem; }
 .project-section-title { margin: 48px 0 16px !important; font-size: 1.1rem !important; color: var(--muted); letter-spacing: .04em !important; text-transform: uppercase; }
 .project-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
