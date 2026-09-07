@@ -8,40 +8,74 @@ translation: /projects/
 
 # Projects
 
-<p class="page-intro">Selected engineering work from corporate infrastructure and public side projects. Names, addresses, credentials and internal topology are intentionally omitted.</p>
+<p class="page-intro">Not every ticket deserves its own case study. These are the stories that best show how I work: make delivery predictable, remove repetitive work, and leave a clear process behind for the team.</p>
 
-<section class="case-study"><p class="case-kicker">TeamCity · CI/CD · Linux · Windows</p><h2>A delivery platform for 50+ services</h2><div class="case-grid"><div><h3>Context</h3><p>Building, testing, publishing artefacts and deploying .NET and frontend services across Linux and Windows needed one predictable delivery process.</p></div><div><h3>What I did</h3><p>Standardised TeamCity CI/CD, automated release steps and routine operations with PowerShell, Bash and Python, and used Docker where it simplified delivery.</p></div><div><h3>Result</h3><p>Release operations became 2–3 times faster and manual work decreased by 50–70%. The process became easier to repeat and troubleshoot. <a href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener">Sanitised patterns and tools ↗</a></p></div></div></section>
+<section class="case-study">
+  <p class="case-kicker">Core experience · TeamCity · CI/CD</p>
+  <h2>Made delivery for 50+ services calm and repeatable</h2>
+  <div class="case-grid">
+    <div><h3>Starting point</h3><p>.NET and frontend services had different build and deployment steps. The failure was often not in the code, but in a manual action or an environment difference.</p></div>
+    <div><h3>What changed</h3><p>I brought TeamCity CI/CD to a common approach: builds, tests, artefacts and deployment to Linux and Windows. Repetitive work moved into PowerShell, Bash and Python automation.</p></div>
+    <div><h3>Outcome</h3><p>Release operations became 2–3 times faster, with 50–70% less manual involvement. When something failed, the team could see which stage needed attention. <a href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener">Public delivery patterns ↗</a></p></div>
+  </div>
+</section>
 
-<section class="case-study"><p class="case-kicker">Platform operations · TeamCity · Docker · Keycloak</p><h2>Repeatable environments for branches and automated tests</h2><div class="case-grid"><div><h3>Context</h3><p>New features, integrations and regression checks needed separate test environments. Preparing the environment, database and access by hand made the start slow and unpredictable.</p></div><div><h3>What I did</h3><p>Prepared TeamCity templates to deploy Linux environments with Docker and PostgreSQL: restore the database, publish the application, configure access and run UI/API tests. Maintained branch rules, agents and artefacts so an environment could be rebuilt and diagnosed consistently.</p></div><div><h3>Result</h3><p>A repeatable path from a branch to a ready test environment, without assembling a stand by hand. Preparation became faster, while build, access and infrastructure problems became visible at a specific pipeline stage. <a href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener">Public example and runbook ↗</a></p></div></div></section>
+<section class="case-study">
+  <p class="case-kicker">Platform operations · Docker · PostgreSQL</p>
+  <h2>Built test environments that do not need to be assembled by hand</h2>
+  <div class="case-grid">
+    <div><h3>The need</h3><p>Branches, integrations and automated tests all need isolated environments. When the database, access and services are prepared manually, testing waits for infrastructure.</p></div>
+    <div><h3>The approach</h3><p>I prepared TeamCity templates for Linux environments with Docker and PostgreSQL: restoring a test database, publishing the application, configuring access and running UI/API tests.</p></div>
+    <div><h3>Outcome</h3><p>The path from a branch to a ready environment became repeatable. Build, access and infrastructure failures show up at a specific pipeline stage instead of after a long manual investigation. <a href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener">Public example and runbook ↗</a></p></div>
+  </div>
+</section>
 
-<section class="case-study"><p class="case-kicker">Incident response · PostgreSQL · Reverse proxy · CI/CD</p><h2>Resolving enterprise-system degradation across several environments</h2><div class="case-grid"><div><h3>Context</h3><p>The issue appeared across several environments and touched the whole path: application, OS, network, reverse proxy, database and CI/CD.</p></div><div><h3>What I did</h3><p>Ran an end-to-end investigation, isolated the causes, aligned environment configuration and introduced a consistent approach to directories, logging and health checks.</p></div><div><h3>Result</h3><p>The system was restored. Follow-up incidents became faster to investigate because service state and checkpoints were clearer for the team.</p></div></div></section>
+<section class="case-study">
+  <p class="case-kicker">Reliability · PostgreSQL · S3/MinIO · Observability</p>
+  <h2>Restored services and made the next incident easier</h2>
+  <div class="case-grid">
+    <div><h3>Reality</h3><p>Across 30+ Linux and Windows servers, a problem rarely lives in one place. It can sit at the boundary of the application, network, reverse proxy, database and CI/CD.</p></div>
+    <div><h3>How I worked</h3><p>I investigated the full path, aligned environment configuration, and put in health checks, logging and backups for PostgreSQL, configuration and files in S3/MinIO.</p></div>
+    <div><h3>What remained</h3><p>Not just a restored service, but a clearer operating picture: metrics and logs in Zabbix, Grafana, ELK and Graylog, explicit checkpoints and a recovery path.</p></div>
+  </div>
+</section>
 
-<section class="case-study"><p class="case-kicker">PostgreSQL · S3/MinIO · Nginx · Observability</p><h2>Operational reliability for services and data</h2><div class="case-grid"><div><h3>Context</h3><p>An estate of 30+ Linux and Windows servers and containerised services needed repeatable recovery and visibility without manually checking every node.</p></div><div><h3>What I did</h3><p>Set up backups for PostgreSQL, configuration and file storage in S3/MinIO; supported reverse proxying and monitoring with Zabbix, Grafana, ELK and Graylog.</p></div><div><h3>Result</h3><p>Critical data had a clear backup scenario, while service health became visible through metrics and logs instead of only through user reports.</p></div></div></section>
+<section class="case-study">
+  <p class="case-kicker">DevSecOps · Security automation</p>
+  <h2>Brought security checks into the normal development path</h2>
+  <div class="case-grid">
+    <div><h3>Why</h3><p>Vulnerability checks help only when their result is easy to understand before release, not when someone has to search through several unrelated reports.</p></div>
+    <div><h3>What I did</h3><p>Connected Trivy, Semgrep, CodeQL and dependency analysis for different stacks. I also prepared a reproducible export of a public vulnerability catalogue with SHA-256 verification.</p></div>
+    <div><h3>Outcome</h3><p>Checks became a clear CI stage instead of a noisy red build. <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">Public automation example ↗</a></p></div>
+  </div>
+</section>
 
-<section class="case-study"><p class="case-kicker">HPC · Slurm · Ceph</p><h2>Making the PoliTech compute cluster ready for day-to-day work</h2><div class="case-grid"><div><h3>Situation</h3><p>The cluster needed to be safe to use and easy to hand over, without accidentally stopping active calculations.</p></div><div><h3>What I did</h3><p>Checked Slurm and CephFS, set up a backup controller, CPU and memory limits, shared storage, and templates for VASP and Gaussian calculations.</p></div><div><h3>Result</h3><p>A working queue, verified test calculations and a clear guide on what can be changed, what should stay untouched and how to check the cluster.</p></div></div></section>
+<section class="case-study">
+  <p class="case-kicker">Self-hosted AI · FastAPI · MCP</p>
+  <h2>Built local AI services that help with everyday work</h2>
+  <div class="case-grid">
+    <div><h3>Two practical cases</h3><p>The first turns a recording into text through an HTTP API. The second finds earlier decisions and task context in working chats.</p></div>
+    <div><h3>What I built</h3><p>A FastAPI service using VOSK, ffmpeg, timestamps and observability; plus a webhook bot, full-text search and MCP-style context retrieval for Codex.</p></div>
+    <div><h3>Why it matters</h3><p>Neither is an AI demo for its own sake: both save time on routine work and stay self-hosted. <a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">STT API ↗</a> · <a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">context search ↗</a></p></div>
+  </div>
+</section>
 
-<section class="case-study"><p class="case-kicker">FastAPI · VOSK · Speech-to-text</p><h2>A VOSK voice-to-text service</h2><div class="case-grid"><div><h3>Need</h3><p>Turn voice recordings into text through a simple HTTP API, regardless of the original audio format.</p></div><div><h3>What I did</h3><p>Built a FastAPI service that accepts common audio formats, converts them with ffmpeg and supports both Russian and English. Prepared it for self-hosted deployment and tested it under load.</p></div><div><h3>Result</h3><p>It became the base of a local transcription service: the caller can choose a lightweight or more accurate model, receive word timings, restore punctuation and see processing speed. <a href="https://github.com/lvipa/vosk-smart-stt-api" target="_blank" rel="noopener">Public source on GitHub ↗</a></p></div></div></section>
+<section class="case-study">
+  <p class="case-kicker">Short project · HPC · Slurm · Ceph</p>
+  <h2>Prepared a compute cluster for handover to operations</h2>
+  <div class="case-grid">
+    <div><h3>Context</h3><p>This was a separate university project, not my primary role. The clusters needed to be ready for safe day-to-day use.</p></div>
+    <div><h3>What I did</h3><p>Checked Slurm and CephFS, set up a backup controller, CPU and memory limits, shared storage, and templates for VASP and Gaussian calculations.</p></div>
+    <div><h3>Outcome</h3><p>A working queue, verified test calculations and a concise operational guide — without relying on the person who originally configured the cluster.</p></div>
+  </div>
+</section>
 
-<section class="case-study"><p class="case-kicker">Chatbot · Codex · MCP/skills</p><h2>A chatbot and searchable chat history</h2><div class="case-grid"><div><h3>Need</h3><p>Quickly find past decisions, discussions and task context in working chats.</p></div><div><h3>What I did</h3><p>Built a webhook bot and a small API. Messages are stored locally, searchable, and Codex can retrieve the useful fragment with its date and author.</p></div><div><h3>Result</h3><p>Chat history becomes a usable source of context instead of a manual archive. It connects to Codex through a skill/MCP-style workflow. <a href="https://github.com/lvipa/express-chat-context" target="_blank" rel="noopener">Public source on GitHub ↗</a></p></div></div></section>
+<h2 class="project-section-title">Public tools</h2>
+<div class="project-links">
+  <a class="project-link" href="https://github.com/lvipa/teamcity-scripts" target="_blank" rel="noopener"><strong>TeamCity REST API utilities ↗</strong><span>PowerShell tools for build-configuration and dependency analysis.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/platform-ops-lab" target="_blank" rel="noopener"><strong>Platform Ops Lab ↗</strong><span>A sanitised example of branch environments, readiness gates and a runbook.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener"><strong>DevOps Delivery Lab ↗</strong><span>Release validation, health checks and an operations checklist.</span></a>
+  <a class="project-link" href="https://github.com/lvipa/minichat-platform" target="_blank" rel="noopener"><strong>MiniChat Platform ↗</strong><span>A personal full-stack project: .NET, Angular PWA, Keycloak and SignalR.</span></a>
+</div>
 
-<section class="case-study"><p class="case-kicker">MikroTik · VPN · proxy-home</p><h2>A home gateway for selected traffic</h2><div class="case-grid"><div><h3>Need</h3><p>Send only selected traffic through a proxy without breaking normal Internet access at home.</p></div><div><h3>What I did</h3><p>Connected MikroTik to a dedicated proxy-home server. The router sends selected destinations to the gateway, which picks a working route and can switch when one fails.</p></div><div><h3>Result</h3><p>Normal traffic stays normal, while selected services use the proxy. Changes start with backups, and the current state is available in a local panel.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">Telegram · ISPmanager · Automation</p><h2>Connection profiles and Telegram notifications</h2><div class="case-grid"><div><h3>Need</h3><p>Avoid assembling connection settings manually for every client and receive simple network status updates.</p></div><div><h3>What I did</h3><p>Built profile generators for different applications and prepared publishing through ISPmanager. Added short status summaries from the router and proxy-home to Telegram.</p></div><div><h3>Result</h3><p>One flow: update the source settings, build profiles, validate them and publish. Notifications help spot a problem without constantly opening devices.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">PWA · .NET · SignalR · proxy-home</p><h2>MiniChat messenger on proxy-home</h2><div class="case-grid"><div><h3>Need</h3><p>Run a mobile messenger on a home gateway that was already in use, without changing its routing behaviour.</p></div><div><h3>What I did</h3><p>Prepared the PWA, API and Keycloak authentication; added direct and group chats, contact search, attachments and push notifications. The service has its own address and a safe co-hosting setup.</p></div><div><h3>Result</h3><p>A standalone messaging app that opens in a browser or installs as a PWA. Its service health is checked separately from the VPN gateway. <a href="https://github.com/lvipa/minichat-platform" target="_blank" rel="noopener">Public source on GitHub ↗</a></p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">CI/CD · Security</p><h2>Checking code and dependencies in the build</h2><div class="case-grid"><div><h3>Why</h3><p>Find a vulnerable library or risky code before a release goes any further.</p></div><div><h3>What I did</h3><p>Added Trivy, Semgrep, CodeQL and dependency checks to the build. Checks can run only for the needed project, and reports stay separate.</p></div><div><h3>Result</h3><p>One clear way to check frontend, backend and legacy code without manually combining several tools.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">Security automation · Playwright · SHA-256</p><h2>Reproducible vulnerability-catalogue export</h2><div class="case-grid"><div><h3>Context</h3><p>Vulnerability analysis needs a repeatable input with a clear source and a way to verify exactly which file was used.</p></div><div><h3>What I did</h3><p>Built a Node.js/Playwright utility that downloads an XLSX catalogue and stores its retrieval time, source URL and SHA-256 digest alongside it. Credentials are supplied only at runtime.</p></div><div><h3>Result</h3><p>A traceable input for later CVE review, without storing passwords, browser state or downloaded data in Git. <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">Public source on GitHub ↗</a></p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">PostgreSQL · HA</p><h2>Checking a PostgreSQL cluster configuration</h2><div class="case-grid"><div><h3>Why</h3><p>See where the live database settings differ from a known-good template.</p></div><div><h3>What I did</h3><p>Wrote a check for PostgreSQL, Patroni, HAProxy and Keepalived. It ignores comments and addresses that are expected to differ by environment.</p></div><div><h3>Result</h3><p>Instead of manually comparing configs for hours, there is a clear list of differences worth checking.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">Linux · TeamCity · Testing</p><h2>Moving test environments to Linux</h2><div class="case-grid"><div><h3>Why</h3><p>Run tests the same way every time instead of setting up a test stand by hand.</p></div><div><h3>What I did</h3><p>Set up services, Docker and the database. The build restores the database, deploys the app, then runs UI and API tests.</p></div><div><h3>Result</h3><p>The stand is easier to restart, and failures are easier to locate.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">Release engineering</p><h2>Checking what gets into a release</h2><div class="case-grid"><div><h3>Why</h3><p>Catch an accidental file, library or debug folder in a new delivery.</p></div><div><h3>What I did</h3><p>Added a separate CI check that compares the new archive with the last or reference version, including nested ZIP files.</p></div><div><h3>Result</h3><p>The team gets a list of changes and decides what should stay. The main build keeps running normally.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">SonarQube · Build agents</p><h2>Code analysis on any build agent</h2><div class="case-grid"><div><h3>Why</h3><p>Make code-quality checks independent of one special server.</p></div><div><h3>What I did</h3><p>Standardized Java, scanner tools, environment variables, certificates and limits for larger reports.</p></div><div><h3>Result</h3><p>The check runs on regular agents and is now a normal part of CI.</p></div></div></section>
-
-<section class="case-study"><p class="case-kicker">PowerShell · TeamCity REST API</p><h2>Tools for examining build configuration and dependency impact</h2><div class="case-grid"><div><h3>Context</h3><p>In a large CI system, it is difficult to see where a build parameter is used or which configurations depend on a particular build type.</p></div><div><h3>What I did</h3><p>Built PowerShell utilities that use the TeamCity REST API to find configurations by parameter and identify snapshot and artifact dependencies.</p></div><div><h3>Result</h3><p>A repeatable way to assess change impact without manually browsing the TeamCity UI. <a href="https://github.com/lvipa/teamcity-scripts" target="_blank" rel="noopener">Public source on GitHub ↗</a></p></div></div></section>
-
-<p class="page-note">All examples are intentionally anonymized: no company names, hosts, credentials or internal topology.</p>
+<p class="page-note">Corporate cases are intentionally anonymised: no company names, hosts, credentials or internal architecture.</p>

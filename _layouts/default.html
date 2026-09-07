@@ -30,7 +30,6 @@
       {% assign home_url = '/en/' %}
       {% assign about_url = '/en/about/' %}
       {% assign projects_url = '/en/projects/' %}
-      {% assign notes_url = '/en/notes/' %}
       {% assign contact_url = '/en/contact/' %}
       {% assign resume_url = '/en/resume/' %}
     {% else %}
@@ -38,7 +37,6 @@
       {% assign home_url = '/' %}
       {% assign about_url = '/about/' %}
       {% assign projects_url = '/projects/' %}
-      {% assign notes_url = '/notes/' %}
       {% assign contact_url = '/contact/' %}
       {% assign resume_url = '/resume/' %}
     {% endif %}
@@ -51,7 +49,6 @@
         <nav class="site-nav" aria-label="{% if is_english %}Primary navigation{% else %}Основная навигация{% endif %}">
           <a href="{{ about_url | relative_url }}"{% if page.url == about_url %} aria-current="page"{% endif %}>{% if is_english %}About{% else %}Обо мне{% endif %}</a>
           <a href="{{ projects_url | relative_url }}"{% if page.url == projects_url %} aria-current="page"{% endif %}>{% if is_english %}Projects{% else %}Проекты{% endif %}</a>
-          <a href="{{ notes_url | relative_url }}"{% if page.url == notes_url %} aria-current="page"{% endif %}>{% if is_english %}Notes{% else %}Заметки{% endif %}</a>
           <a href="{{ resume_url | relative_url }}"{% if page.url == resume_url %} aria-current="page"{% endif %}>{% if is_english %}Resume{% else %}Резюме{% endif %}</a>
           <a href="{{ contact_url | relative_url }}"{% if page.url == contact_url %} aria-current="page"{% endif %}>{% if is_english %}Contact{% else %}Контакты{% endif %}</a>
         </nav>

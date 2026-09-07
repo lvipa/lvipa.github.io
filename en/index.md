@@ -36,8 +36,7 @@ translation: /
     <p class="section-label">Navigation</p>
     <div class="nav-grid">
       <a class="nav-card" href="{{ '/en/about/' | relative_url }}"><strong>About</strong><span>Professional profile and areas of work.</span></a>
-      <a class="nav-card" href="{{ '/en/projects/' | relative_url }}"><strong>Projects</strong><span>Practice outcomes and working initiatives.</span></a>
-      <a class="nav-card" href="{{ '/en/notes/' | relative_url }}"><strong>Notes</strong><span>Materials on infrastructure and automation.</span></a>
+      <a class="nav-card" href="{{ '/en/projects/' | relative_url }}"><strong>Projects</strong><span>A few key stories, explained plainly and with outcomes.</span></a>
       <a class="nav-card" href="{{ '/en/contact/' | relative_url }}"><strong>Contact</strong><span>LinkedIn, Telegram, GitHub and resume.</span></a>
     </div>
   </div>

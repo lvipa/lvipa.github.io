@@ -35,8 +35,7 @@ translation: /en/
     <p class="section-label">Навигация</p>
     <div class="nav-grid">
       <a class="nav-card" href="{{ '/about/' | relative_url }}"><strong>Обо мне</strong><span>Профессиональный профиль и направления работы.</span></a>
-      <a class="nav-card" href="{{ '/projects/' | relative_url }}"><strong>Проекты</strong><span>Результаты практики и рабочие инициативы.</span></a>
-      <a class="nav-card" href="{{ '/notes/' | relative_url }}"><strong>Заметки</strong><span>Материалы по инфраструктуре и автоматизации.</span></a>
+      <a class="nav-card" href="{{ '/projects/' | relative_url }}"><strong>Проекты</strong><span>Несколько ключевых задач — человеческим языком и с результатом.</span></a>
       <a class="nav-card" href="{{ '/contact/' | relative_url }}"><strong>Контакты</strong><span>LinkedIn, Telegram, GitHub и резюме.</span></a>
     </div>
   </div>
