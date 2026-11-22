@@ -14,9 +14,9 @@ translation: /en/
       <span class="hero-word hero-word--small">Автоматизация.</span>
       <span class="hero-word hero-word--xsmall">Надёжность.</span>
     </h1>
-    <p>Настраиваю сборку и поставку приложений, развёртываю сервисы в Docker и Kubernetes, сопровождаю Linux- и Windows-инфраструктуру. Основной опыт — СМС-ИТ: от внедрения систем у заказчиков до CI/CD и автоматизации эксплуатации.</p>
+    <p>Настраиваю сборку и&nbsp;поставку приложений, развёртываю сервисы в&nbsp;Docker и&nbsp;Kubernetes, сопровождаю Linux- и&nbsp;Windows-инфраструктуру. Основной опыт — СМС-ИТ: от&nbsp;внедрения систем у&nbsp;заказчиков до&nbsp;CI/CD и&nbsp;автоматизации эксплуатации.</p>
     <div class="hero-actions">
-      <a class="button button-primary" href="https://t.me/lvipa">Написать в Telegram</a>
+      <a class="button button-primary" href="https://t.me/lvipa">Написать в&nbsp;Telegram</a>
       <a class="button button-secondary" href="{{ '/resume/' | relative_url }}">Открыть резюме</a>
     </div>
     <div class="profile-links" aria-label="Профессиональные профили">
@@ -34,9 +34,9 @@ translation: /en/
   <div class="shell">
     <p class="section-label">Навигация</p>
     <div class="nav-grid">
-      <a class="nav-card" href="{{ '/about/' | relative_url }}"><strong>Обо мне</strong><span>Профессиональный профиль и направления работы.</span></a>
-      <a class="nav-card" href="{{ '/projects/' | relative_url }}"><strong>Проекты</strong><span>Развёртывание сервисов, CI/CD и инструменты автоматизации.</span></a>
-      <a class="nav-card" href="{{ '/contact/' | relative_url }}"><strong>Контакты</strong><span>LinkedIn, Telegram, GitHub и резюме.</span></a>
+      <a class="nav-card" href="{{ '/about/' | relative_url }}"><strong>Обо мне</strong><span>Профессиональный профиль и&nbsp;направления работы.</span></a>
+      <a class="nav-card" href="{{ '/projects/' | relative_url }}"><strong>Проекты</strong><span>Развёртывание сервисов, CI/CD и&nbsp;инструменты автоматизации.</span></a>
+      <a class="nav-card" href="{{ '/contact/' | relative_url }}"><strong>Контакты</strong><span>LinkedIn, Telegram, GitHub и&nbsp;резюме.</span></a>
     </div>
   </div>
 </section>

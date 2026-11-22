@@ -12,17 +12,17 @@ translation: /resume/
     <div>
       <p class="resume-kicker">Senior DevOps &amp; Infrastructure Engineer</p>
       <h1>Ivan Lipatov</h1>
-      <p>Samara, Russia · Open to remote and hybrid roles</p>
+      <p>Samara, Russia · Open to&nbsp;remote and&nbsp;hybrid roles</p>
       <p class="resume-links"><a href="mailto:lvipa@ivanlipatov.ru">Email</a><a href="https://t.me/lvipa">Telegram</a><a href="https://github.com/lvipa">GitHub</a><a href="https://www.linkedin.com/in/lvipa/">LinkedIn</a></p>
     </div>
     <img src="{{ '/assets/images/ivan-lipatov.jpeg' | relative_url }}" alt="Ivan Lipatov" class="resume-photo">
   </div>
 
   <section class="resume-highlights" aria-label="Core areas">
-    <div><strong>Since 2017</strong><span>working in IT</span></div>
+    <div><strong>Since 2017</strong><span>working in&nbsp;IT</span></div>
     <div><strong>Since 2020</strong><span>at SMS-IT</span></div>
-    <div><strong>CI/CD</strong><span>TeamCity and build automation</span></div>
-    <div><strong>Docker</strong><span>Compose and Kubernetes</span></div>
+    <div><strong>CI/CD</strong><span>TeamCity and&nbsp;build automation</span></div>
+    <div><strong>Docker</strong><span>Compose and&nbsp;Kubernetes</span></div>
     <div><strong>Scripting</strong><span>PowerShell, Bash, Python</span></div>
   </section>
 
@@ -33,28 +33,28 @@ translation: /resume/
         <header class="resume-employer-head">
           <p>September 2020 — present</p>
           <h3>SMS-Information Technologies LLC</h3>
-          <span>From customer implementations to CI/CD and internal infrastructure</span>
+          <span>From customer implementations to&nbsp;CI/CD and&nbsp;internal infrastructure</span>
         </header>
 
         <article class="resume-job resume-job--current">
           <h3>Lead IS Implementation Specialist / Senior DevOps &amp; Infrastructure Engineer</h3>
           <p class="resume-meta">Feb 2024 - present · Samara, Russia</p>
-          <p>Develop CI/CD and maintain the company's internal infrastructure: application builds and delivery, test environments, and Linux and Windows servers.</p>
+          <p>Develop CI/CD and&nbsp;maintain the company's internal infrastructure: application builds and&nbsp;delivery, test environments, and&nbsp;Linux and&nbsp;Windows servers.</p>
           <ul>
-            <li>Configure and maintain TeamCity builds, tests and deployments for .NET, Python and frontend applications. Automated branch synchronisation between deploy and build configurations through the REST API.</li>
-            <li>Implemented and tested EXE/DLL and installer signing in three build chains, including version changes, signature verification and packaging.</li>
-            <li>Deployed GitLab Runner in Docker on Debian 12 with the Docker executor, a private registry and a .NET SDK image.</li>
-            <li>Deployed a new Keycloak test environment in Kubernetes. Tested migration of a PostgreSQL database copy and configured Secrets, probes, container resources and MetalLB exposure.</li>
-            <li>Deployed Portainer through Helm with PV/PVC storage and HTTPS. Connected six Docker hosts without restarting applications; configured AD/LDAPS and network restrictions for agents.</li>
-            <li>Configured test-environment authentication through Keycloak/OIDC and ADFS, including claims, groups, roles and user sign-in checks.</li>
-            <li>Configured TeamCity updates and rollback for three AI services, preserving models and data. Added Zabbix readiness checks that do not send user documents.</li>
-            <li>Automated test-database restoration from templates. Maintain PostgreSQL, Redis, S3/MinIO, Nginx/IIS, backups and monitoring.</li>
-            <li>Developed PowerShell tools to run Trivy, Semgrep and CodeQL and consolidate JSON/SARIF and Excel reports. Deployed VOSK/FastAPI and a transcription service.</li>
+            <li>Configure and&nbsp;maintain TeamCity builds, tests and&nbsp;deployments for&nbsp;.NET, Python and&nbsp;frontend applications. Automated branch synchronisation between deploy and&nbsp;build configurations through the REST API.</li>
+            <li>Implemented and&nbsp;tested EXE/DLL and&nbsp;installer signing in&nbsp;three build chains, including version changes, signature verification and&nbsp;packaging.</li>
+            <li>Deployed GitLab Runner in&nbsp;Docker on Debian 12 with&nbsp;the Docker executor, a private registry and&nbsp;a .NET SDK image.</li>
+            <li>Deployed a new Keycloak test environment in&nbsp;Kubernetes. Tested migration of&nbsp;a PostgreSQL database copy and&nbsp;configured Secrets, probes, container resources and&nbsp;MetalLB exposure.</li>
+            <li>Deployed Portainer through Helm with&nbsp;PV/PVC storage and&nbsp;HTTPS. Connected six Docker hosts without restarting applications; configured AD/LDAPS and&nbsp;network restrictions for&nbsp;agents.</li>
+            <li>Configured test-environment authentication through Keycloak/OIDC and&nbsp;ADFS, including claims, groups, roles and&nbsp;user sign-in&nbsp;checks.</li>
+            <li>Configured TeamCity updates and&nbsp;rollback for&nbsp;three AI services, preserving models and&nbsp;data. Added Zabbix readiness checks that do not send user documents.</li>
+            <li>Automated test-database restoration from templates. Maintain PostgreSQL, Redis, S3/MinIO, Nginx/IIS, backups and&nbsp;monitoring.</li>
+            <li>Developed PowerShell tools to&nbsp;run Trivy, Semgrep and&nbsp;CodeQL and&nbsp;consolidate JSON/SARIF and&nbsp;Excel reports. Deployed VOSK/FastAPI and&nbsp;a transcription service.</li>
           </ul>
-          <p><a href="{{ '/en/projects/' | relative_url }}">Implementation details and public examples →</a></p>
+          <p><a href="{{ '/en/projects/' | relative_url }}">Implementation details and&nbsp;public examples →</a></p>
           <div class="resume-project-note">
             <h4>Additional project work · March — June 2026</h4>
-            <p>Alongside my main job, commissioned three 10-node HPC clusters for Samara State Technical University: Linux, Slurm, Ceph/CephFS and SONiC networking. Configured storage and job queues, investigated hardware and network failures, and wrote operational documentation.</p>
+            <p>Alongside my main job, commissioned three 10-node HPC clusters for&nbsp;Samara State Technical University: Linux, Slurm, Ceph/CephFS and&nbsp;SONiC networking. Configured storage and&nbsp;job queues, investigated hardware and&nbsp;network failures, and&nbsp;wrote operational documentation.</p>
           </div>
         </article>
 
@@ -62,9 +62,9 @@ translation: /resume/
           <h3>Senior Implementation Service Specialist</h3>
           <p class="resume-meta">Dec 2021 - Jan 2024 · Samara, Russia</p>
           <ul>
-            <li>Resolved a complex degradation incident affecting several corporate system environments: traced the chain from application to database and CI/CD, removed root causes and standardized configuration.</li>
-            <li>Implemented and operated an enterprise system for large customers: Windows/Debian, IIS, .NET Core, PostgreSQL, Redis Cluster, Docker, Ceph, MinIO and S3.</li>
-            <li>Agreed technical solutions with customer security and engineering teams; contributed to deployment automation, monitoring and backups.</li>
+            <li>Resolved a complex degradation incident affecting several corporate system environments: traced the chain from application to&nbsp;database and&nbsp;CI/CD, removed root causes and&nbsp;standardized configuration.</li>
+            <li>Implemented and&nbsp;operated an enterprise system for&nbsp;large customers: Windows/Debian, IIS, .NET Core, PostgreSQL, Redis Cluster, Docker, Ceph, MinIO and&nbsp;S3.</li>
+            <li>Agreed technical solutions with&nbsp;customer security and&nbsp;engineering teams; contributed to&nbsp;deployment automation, monitoring and&nbsp;backups.</li>
           </ul>
         </article>
 
@@ -72,21 +72,21 @@ translation: /resume/
           <h3>Implementation Service Specialist</h3>
           <p class="resume-meta">Sep 2020 - Nov 2021 · Samara, Russia</p>
           <ul>
-            <li>Prepared test and server environments for SCADA and analytics systems; performed load and stress testing, analysed metrics and helped address bottlenecks.</li>
-            <li>Administered Windows Server and PostgreSQL; contributed to Docker, Ceph, MinIO, S3 storage, monitoring and backup configuration.</li>
+            <li>Prepared test and&nbsp;server environments for&nbsp;SCADA and&nbsp;analytics systems; performed load and&nbsp;stress testing, analysed metrics and&nbsp;helped address bottlenecks.</li>
+            <li>Administered Windows Server and&nbsp;PostgreSQL; contributed to&nbsp;Docker, Ceph, MinIO, S3 storage, monitoring and&nbsp;backup configuration.</li>
           </ul>
         </article>
       </section>
 
       <article class="resume-job">
         <h3>Implementation &amp; Technical Support Specialist</h3>
-        <p class="resume-company">InfoPro Group of Companies</p>
+        <p class="resume-company">InfoPro Group of&nbsp;Companies</p>
         <p class="resume-meta">Sep 2017 - Aug 2019 · Samara, Russia</p>
-        <ul><li>Implemented energy-sector software, configuring calculation workflows, algorithms and reports.</li><li>Automated data collection and processing in C#, including HTTP requests and file processing. Worked with SQL, PostgreSQL and MS SQL Server.</li><li>Investigated bugs, tested functionality, wrote instructions and supported users.</li></ul>
+        <ul><li>Implemented energy-sector software, configuring calculation workflows, algorithms and&nbsp;reports.</li><li>Automated data collection and&nbsp;processing in&nbsp;C#, including HTTP requests and&nbsp;file processing. Worked with&nbsp;SQL, PostgreSQL and&nbsp;MS SQL Server.</li><li>Investigated bugs, tested functionality, wrote instructions and&nbsp;supported users.</li></ul>
       </article>
     </div>
     <aside class="resume-side">
-      <h2>Education</h2><p><strong>Samara State Technical University</strong><br>Higher education, Mathematical Support and Administration of Information Systems<br>2017</p>
+      <h2>Education</h2><p><strong>Samara State Technical University</strong><br>Higher education, Mathematical Support and&nbsp;Administration of&nbsp;Information Systems<br>2017</p>
       <h2>Skills</h2>
       <p><strong>CI/CD:</strong> TeamCity, GitLab Runner, REST API, Git</p>
       <p><strong>Containers:</strong> Docker, Docker Compose, Kubernetes, Helm, Portainer</p>
