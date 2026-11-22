@@ -18,12 +18,12 @@ translation: /en/resume/
     <img src="{{ '/assets/images/ivan-lipatov.jpeg' | relative_url }}" alt="Иван Липатов" class="resume-photo">
   </div>
 
-  <section class="resume-highlights" aria-label="Ключевые результаты">
-    <div><strong>8+ лет</strong><span>общего опыта в ИТ</span></div>
-    <div><strong>6 лет</strong><span>опыта в СМС-ИТ</span></div>
-    <div><strong>50+</strong><span>сервисов в TeamCity CI/CD</span></div>
-    <div><strong>30+</strong><span>Linux- и Windows-серверов</span></div>
-    <div><strong>50–70%</strong><span>меньше ручных операций</span></div>
+  <section class="resume-highlights" aria-label="Основные направления">
+    <div><strong>С 2017</strong><span>работаю в ИТ</span></div>
+    <div><strong>С 2020</strong><span>в СМС-ИТ</span></div>
+    <div><strong>CI/CD</strong><span>TeamCity и автоматизация сборок</span></div>
+    <div><strong>Docker</strong><span>Compose и Kubernetes</span></div>
+    <div><strong>Скрипты</strong><span>PowerShell, Bash, Python</span></div>
   </section>
 
   <div class="resume-layout">
@@ -32,28 +32,40 @@ translation: /en/resume/
 
       <section class="resume-employer-group" aria-label="Основной опыт в СМС-ИТ">
         <header class="resume-employer-head">
-          <p>Опыт в СМС-ИТ · 6 лет · Сентябрь 2020 - н.в.</p>
+          <p>Сентябрь 2020 — настоящее время</p>
           <h3>СМС-Информационные технологии, ООО</h3>
-          <span>Рост от специалиста службы внедрения до Senior DevOps &amp; Infrastructure Engineer</span>
+          <span>От внедрения систем у заказчиков до CI/CD и внутренней инфраструктуры</span>
         </header>
 
         <article class="resume-job resume-job--current">
-          <h3>Senior DevOps &amp; Infrastructure Engineer</h3>
+          <h3>Ведущий специалист по внедрению ИС / Senior DevOps &amp; Infrastructure Engineer</h3>
           <p class="resume-meta">Февраль 2024 - н.в. · Самара, Россия</p>
+          <p>Развиваю CI/CD и сопровождаю внутреннюю инфраструктуру компании: сборку и поставку приложений, тестовые среды, Linux- и Windows-серверы.</p>
           <ul>
-            <li>Развил и стандартизировал TeamCity CI/CD для 50+ сервисов: сборка, тестирование, публикация артефактов и деплой .NET- и frontend-приложений в Linux- и Windows-окружения.</li>
-            <li>Перевёл очистку и ротацию файлов, проверки сервисов и БД, а также сбор диагностики в сценарии PowerShell, Bash и Python; ручное участие снизилось на 50–70%.</li>
-            <li>Стандартизировал окружения, структуру каталогов, логирование и health-check'и: релизные операции стали в 2–3 раза быстрее и устойчивее.</li>
-            <li>Сопровождаю 30+ Linux- и Windows-серверов, Docker, PostgreSQL и S3/MinIO; настраиваю Nginx/IIS reverse proxy, резервное копирование и наблюдаемость через Zabbix, Grafana, ELK и Graylog.</li>
+            <li>Настроил и поддерживаю сборку, тестирование и деплой .NET-, Python- и frontend-приложений через TeamCity. Автоматизировал синхронизацию веток между deploy- и build-конфигурациями через REST API.</li>
+            <li>Реализовал и проверил подписание EXE/DLL и установщиков в трёх сборочных цепочках: изменение версии, подпись, проверка и упаковка артефактов.</li>
+            <li>Развернул GitLab Runner в Docker на Debian 12: Docker executor, приватный registry и образ .NET SDK.</li>
+            <li>Развернул новый стенд Keycloak в Kubernetes. Проверил миграцию копии PostgreSQL-базы, настроил Secrets, probes, ресурсы контейнера и публикацию через MetalLB.</li>
+            <li>Развернул Portainer через Helm с PV/PVC и HTTPS. Подключил шесть Docker-хостов без перезапуска приложений, настроил AD/LDAPS и сетевые ограничения для агентов.</li>
+            <li>Настроил авторизацию тестовых сред через Keycloak/OIDC и ADFS: claims, группы, роли и проверка пользовательского входа.</li>
+            <li>Для трёх AI-сервисов настроил обновление и откат через TeamCity с сохранением моделей и данных. Добавил проверки готовности в Zabbix без отправки пользовательских документов.</li>
+            <li>Автоматизировал восстановление тестовых БД из шаблонов. Сопровождаю PostgreSQL, Redis, S3/MinIO, Nginx/IIS, резервное копирование и мониторинг.</li>
+            <li>Разрабатывал PowerShell-инструменты запуска Trivy, Semgrep и CodeQL со сводными JSON/SARIF- и Excel-отчётами. Развёртывал VOSK/FastAPI и сервис транскрибации.</li>
           </ul>
+          <p><a href="{{ '/projects/' | relative_url }}">Подробности реализаций и открытые примеры →</a></p>
+          <div class="resume-project-note">
+            <h4>Дополнительный проектный опыт · март — июнь 2026</h4>
+            <p>Параллельно основной работе ввёл в эксплуатацию три HPC-кластера по 10 серверов для Самарского государственного технического университета: Linux, Slurm, Ceph/CephFS, сеть на SONiC. Настраивал хранилище и очереди заданий, разбирал аппаратные и сетевые сбои, подготовил документацию.</p>
+          </div>
         </article>
 
         <article class="resume-job">
           <h3>Старший специалист службы внедрения</h3>
           <p class="resume-meta">Декабрь 2021 - Январь 2024 · Самара, Россия</p>
           <ul>
-            <li>Решил сложный инцидент с деградацией корпоративной системы на нескольких контурах: диагностировал цепочку от приложения до БД и CI/CD, устранил причины и стандартизировал конфигурации.</li>
-            <li>Внедрял и сопровождал enterprise-систему для крупных заказчиков: Windows/Debian, IIS, .NET Core, PostgreSQL, Redis Cluster, Docker, Ceph, MinIO и S3.</li>
+            <li>Внедрял и сопровождал корпоративную систему для крупных заказчиков: Windows/Debian, IIS, .NET Core, PostgreSQL, Redis Cluster, Docker, Ceph и MinIO/S3.</li>
+            <li>Разобрал инцидент с деградацией системы на нескольких контурах: проверил приложение, ОС, сеть, reverse proxy, БД и CI/CD. Устранил причины и привёл конфигурации к единому виду.</li>
+            <li>Согласовывал технические решения с ИБ и командами заказчиков, участвовал в автоматизации деплоя, настройке мониторинга и резервного копирования.</li>
           </ul>
         </article>
 
@@ -61,27 +73,17 @@ translation: /en/resume/
           <h3>Специалист службы внедрения</h3>
           <p class="resume-meta">Сентябрь 2020 - Ноябрь 2021 · Самара, Россия</p>
           <ul>
-            <li>Подготавливал тестовые и серверные площадки для SCADA и аналитических систем; проводил нагрузочное и стресс-тестирование, анализировал метрики и устранял узкие места.</li>
+            <li>Подготавливал тестовые и серверные площадки для SCADA и аналитических систем; проводил нагрузочное и стресс-тестирование, анализировал метрики и участвовал в устранении узких мест.</li>
             <li>Администрировал Windows Server и PostgreSQL, участвовал в настройке Docker, Ceph, MinIO, S3-хранилищ, мониторинга и резервного копирования.</li>
           </ul>
         </article>
       </section>
 
       <article class="resume-job">
-        <h3>Дополнительный проект: Infrastructure / DevOps Engineer - HPC</h3>
-        <p class="resume-company">Самарский государственный технический университет</p>
-        <p class="resume-meta">Март 2026 - Июнь 2026 · Параллельный проект</p>
-        <ul>
-          <li>Ввёл в эксплуатацию три HPC-кластера по 10 серверов для инженерных и научных расчётов.</li>
-          <li>Развернул Ceph и Slurm, настроил SONiC, VLAN и MTU; работал с IPMI, iDRAC, BMC и Redfish API.</li>
-        </ul>
-      </article>
-
-      <article class="resume-job">
         <h3>Специалист внедрения и технической поддержки</h3>
         <p class="resume-company">ИнфоПро, группа компаний</p>
         <p class="resume-meta">Сентябрь 2017 - Август 2019 · Самара, Россия</p>
-        <ul><li>Внедрение ПО для энергетической отрасли, автоматизация сбора данных и работа с SQL, PostgreSQL и MS SQL Server.</li></ul>
+        <ul><li>Внедрял ПО для энергетической отрасли: настраивал расчётные сценарии, алгоритмы и отчётность.</li><li>Автоматизировал сбор и обработку данных на C#, включая HTTP-запросы и обработку файлов. Работал с SQL, PostgreSQL и MS SQL Server.</li><li>Разбирал ошибки, тестировал функциональность, готовил инструкции и консультировал пользователей.</li></ul>
       </article>
     </div>
 
@@ -89,7 +91,14 @@ translation: /en/resume/
       <h2>Образование</h2>
       <p><strong>Самарский государственный технический университет</strong><br>Высшее образование, математическое обеспечение и администрирование информационных систем<br>2017</p>
       <h2>Навыки</h2>
-      <p><strong>CI/CD и автоматизация:</strong> TeamCity, Docker, Docker Compose, Bash, PowerShell, Python<br><strong>Платформы:</strong> Linux, Windows Server, AD, DNS, GPO, IIS<br><strong>Данные и хранение:</strong> PostgreSQL, Redis, S3/MinIO, Ceph<br><strong>Наблюдаемость и сеть:</strong> Nginx, Zabbix, Grafana, ELK, Graylog, Slurm, SONiC, IPMI/iDRAC</p>
+      <p><strong>CI/CD:</strong> TeamCity, GitLab Runner, REST API, Git</p>
+      <p><strong>Контейнеры:</strong> Docker, Docker Compose, Kubernetes, Helm, Portainer</p>
+      <p><strong>Системы и скрипты:</strong> Linux, Windows Server, Bash, PowerShell, Python, systemd</p>
+      <p><strong>Данные:</strong> PostgreSQL, Redis, S3/MinIO, Ceph/CephFS</p>
+      <p><strong>Мониторинг:</strong> Zabbix, Grafana, ELK, Graylog</p>
+      <p><strong>Сеть и доступ:</strong> Nginx, IIS, DNS, TLS, AD, GPO, Keycloak, OIDC, ADFS</p>
+      <p><strong>Анализ безопасности:</strong> Trivy, Semgrep, CodeQL</p>
+      <p><strong>Базовый опыт:</strong> Ansible — тестовые задачи</p>
       <h2>Языки</h2>
       <p>Русский — родной<br>Английский — B1 (Intermediate)</p>
       <h2>Скачать PDF</h2>

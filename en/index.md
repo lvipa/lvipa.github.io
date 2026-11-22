@@ -15,7 +15,7 @@ translation: /
       <span class="hero-word hero-word--small">Automation.</span>
       <span class="hero-word hero-word--xsmall">Networking.</span>
     </h1>
-    <p>I build and operate Linux/Windows infrastructure, CI/CD processes and containerized services. This is my professional profile and a way to get in touch.</p>
+    <p>I configure application builds and deployments, run services in Docker and Kubernetes, and maintain Linux and Windows infrastructure. My main experience is at SMS-IT, progressing from customer implementations to CI/CD and operations automation.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://t.me/lvipa">Message on Telegram</a>
       <a class="button button-secondary" href="{{ '/en/resume/' | relative_url }}">View resume</a>
@@ -36,7 +36,7 @@ translation: /
     <p class="section-label">Navigation</p>
     <div class="nav-grid">
       <a class="nav-card" href="{{ '/en/about/' | relative_url }}"><strong>About</strong><span>Professional profile and areas of work.</span></a>
-      <a class="nav-card" href="{{ '/en/projects/' | relative_url }}"><strong>Projects</strong><span>A few key stories, explained plainly and with outcomes.</span></a>
+      <a class="nav-card" href="{{ '/en/projects/' | relative_url }}"><strong>Projects</strong><span>Service deployment, CI/CD and automation tools.</span></a>
       <a class="nav-card" href="{{ '/en/contact/' | relative_url }}"><strong>Contact</strong><span>LinkedIn, Telegram, GitHub and resume.</span></a>
     </div>
   </div>

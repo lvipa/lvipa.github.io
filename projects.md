@@ -8,15 +8,25 @@ translation: /en/projects/
 
 # Проекты
 
-<p class="page-intro">Ключевые реализации из основной работы и отдельных проектов. Формат короткий: что именно построено и какой эффект это дало. Корпоративные названия, адреса и данные намеренно не публикую.</p>
+<p class="page-intro">Задачи из работы в СМС-ИТ и отдельных проектов: сборки, развёртывание сервисов, авторизация и восстановление данных. Ниже — детали реализации и ссылки на открытые инструменты. Рабочие адреса, конфигурации и данные не публикую.</p>
 
 <section class="case-study">
   <p class="case-kicker">Основной опыт · TeamCity · CI/CD</p>
-  <h2>Поставка 50+ сервисов</h2>
+  <h2>Сборка и поставка приложений через TeamCity</h2>
   <div class="case-grid">
-    <div><h3>Реализация</h3><ul><li>TeamCity build/deploy-конфигурации для .NET и frontend.</li><li>Сборка → тесты → публикация артефактов → деплой в Linux/Windows.</li><li>PowerShell, Bash и Python для повторяемых шагов.</li></ul></div>
-    <div><h3>Конструкции платформы</h3><ul><li>Шаблоны и параметры сборок вместо отдельных ручных сценариев.</li><li>Branch filters, зависимости конфигураций и правила очистки артефактов.</li><li>Проверка влияния изменений через TeamCity REST API.</li></ul></div>
-    <div><h3>Эффект</h3><p>Релизные операции стали быстрее в 2–3 раза, а ручное участие сократилось на 50–70%. <a href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener">Открытые паттерны поставки ↗</a></p></div>
+    <div><h3>Сборочные цепочки</h3><ul><li>Сборка, тестирование, артефакты и деплой .NET-, Python- и frontend-приложений в Linux/Windows.</li><li>Подписание EXE/DLL и установщиков проверено в трёх цепочках: версия → подпись → проверка → упаковка.</li><li>PowerShell, Bash и Python для повторяемых шагов.</li></ul></div>
+    <div><h3>Автоматизация</h3><ul><li>Шаблоны, параметры и зависимости конфигураций TeamCity.</li><li>Синхронизация branch filters от deploy-конфигураций к связанным build-конфигурациям через REST API.</li><li>Bash-проверка процесса Java после обновления JDK: systemd timer перезапускает службу только при обнаружении удалённого исполняемого файла.</li></ul></div>
+    <div><h3>GitLab Runner</h3><p>Развернул runner в Docker на Debian 12. Настроил Docker executor, доступ к приватному registry и использование образа .NET SDK для сборочных задач.</p><p><a href="https://github.com/lvipa/teamcity-branch-sync" target="_blank" rel="noopener">Обобщённый пример синхронизации веток ↗</a></p></div>
+  </div>
+</section>
+
+<section class="case-study">
+  <p class="case-kicker">Kubernetes · Keycloak · Portainer</p>
+  <h2>Развёртывание сервисов в Kubernetes</h2>
+  <div class="case-grid">
+    <div><h3>Новый стенд Keycloak</h3><ul><li>Официальный образ, Secrets, ограничения ресурсов и startup/readiness/liveness probes.</li><li>Копия PostgreSQL-базы и проверка миграции схемы, rollout и OIDC endpoints.</li><li>Публикация через MetalLB; доменный вход и разграничение административных прав.</li></ul></div>
+    <div><h3>Portainer</h3><ul><li>Helm, постоянное хранилище PV/PVC и HTTPS.</li><li>Подключение шести Docker-хостов без перезапуска приложений.</li><li>AD/LDAPS с проверкой сертификата; ограничение сетевого доступа к агентам.</li></ul></div>
+    <div><h3>Область работы</h3><p>Развёртывание и сопровождение прикладных сервисов в существующем Kubernetes-кластере: конфигурация, хранение данных, доступность и авторизация.</p></div>
   </div>
 </section>
 
@@ -34,19 +44,19 @@ translation: /en/projects/
   <p class="case-kicker">Reliability · PostgreSQL · S3/MinIO · Observability</p>
   <h2>Надёжность сервисов и данных</h2>
   <div class="case-grid">
-    <div><h3>Эксплуатация</h3><ul><li>30+ Linux/Windows-серверов, контейнеры, Nginx/IIS.</li><li>PostgreSQL, Redis, S3/MinIO и файловые хранилища.</li><li>AD, DNS, GPO и сервисные учётные записи.</li></ul></div>
-    <div><h3>Контроль и восстановление</h3><ul><li>Резервное копирование БД, конфигураций и файлов.</li><li>Health-check, единые каталоги и логирование.</li><li>Zabbix, Grafana, ELK и Graylog для метрик и журналов.</li></ul></div>
-    <div><h3>Результат</h3><p>Сложные инциденты разбираются по цепочке «приложение → ОС → сеть → proxy → БД → CI/CD», а не наугад.</p></div>
+    <div><h3>Эксплуатация</h3><ul><li>Linux/Windows-среды, контейнеры и reverse proxy на Nginx/IIS.</li><li>PostgreSQL, Redis, S3/MinIO и файловые хранилища.</li><li>AD, DNS, GPO и сервисные учётные записи.</li></ul></div>
+    <div><h3>Обновление и восстановление</h3><ul><li>Для трёх AI-сервисов проверены обновление и откат через TeamCity с сохранением данных и моделей.</li><li>Восстановление тестовых БД из шаблонов; резервные копии БД, конфигураций и файлов в S3/MinIO.</li><li>Zabbix проверяет готовность модели, API и ответ сервиса без загрузки пользовательских документов.</li></ul></div>
+    <div><h3>Диагностика</h3><p>При деградации системы на нескольких контурах проверил приложение, ОС, сеть, reverse proxy, базу данных и CI/CD. Устранил причины и привёл конфигурации к единому виду.</p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">DevSecOps · Security automation</p>
-  <h2>Security checks в CI/CD</h2>
+  <h2>Запуск проверок безопасности и сводные отчёты</h2>
   <div class="case-grid">
     <div><h3>Инструменты</h3><ul><li>Trivy для SCA и контейнеров.</li><li>Semgrep и CodeQL для SAST.</li><li>Нормализация результатов и сводная отчётность.</li></ul></div>
-    <div><h3>Реализация</h3><ul><li>Выборочная проверка нужного проекта и стека.</li><li>Раздельные отчёты для frontend, .NET, Python и legacy-кода.</li><li>Воспроизводимая выгрузка CVE-каталога с SHA-256.</li></ul></div>
-    <div><h3>Результат</h3><p>Проверка безопасности стала отдельным понятным quality gate. <a href="https://github.com/lvipa/security-scan-orchestrator" target="_blank" rel="noopener">Security Scan Orchestrator ↗</a> · <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">FSTEC exporter ↗</a></p></div>
+    <div><h3>Реализация</h3><ul><li>PowerShell-оркестрация: выбор проекта и набора сканеров.</li><li>Отчёты для frontend-, .NET- и Python-проектов в JSON/SARIF и Excel.</li><li>Отдельный инструмент выгрузки CVE-каталога с SHA-256.</li></ul></div>
+    <div><h3>Открытые инструменты</h3><p>Скрипты запускают выбранные сканеры и собирают результаты в сводный отчёт для разбора найденных проблем.</p><p><a href="https://github.com/lvipa/security-scan-orchestrator" target="_blank" rel="noopener">Security Scan Orchestrator ↗</a> · <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">FSTEC exporter ↗</a></p></div>
   </div>
 </section>
 

@@ -63,7 +63,7 @@
       </div>
     </header>
 
-    <main class="{% if page.url == '/' or page.url == '/en/' %}home{% else %}page{% endif %}">
+    <main class="{% if page.url == '/' or page.url == '/en/' %}home{% elsif page.url == '/resume/' or page.url == '/en/resume/' %}resume-container{% elsif page.url == '/projects/' or page.url == '/en/projects/' %}page page--wide{% else %}page{% endif %}">
       {{ content }}
     </main>
 

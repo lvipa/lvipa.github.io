@@ -14,7 +14,7 @@ translation: /en/
       <span class="hero-word hero-word--small">Автоматизация.</span>
       <span class="hero-word hero-word--xsmall">Надёжность.</span>
     </h1>
-    <p>Развиваю и сопровождаю Linux/Windows-инфраструктуру, CI/CD-процессы и контейнерные сервисы. Здесь — мой профессиональный профиль и точки для связи.</p>
+    <p>Настраиваю сборку и поставку приложений, развёртываю сервисы в Docker и Kubernetes, сопровождаю Linux- и Windows-инфраструктуру. Основной опыт — СМС-ИТ: от внедрения систем у заказчиков до CI/CD и автоматизации эксплуатации.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://t.me/lvipa">Написать в Telegram</a>
       <a class="button button-secondary" href="{{ '/resume/' | relative_url }}">Открыть резюме</a>
@@ -35,7 +35,7 @@ translation: /en/
     <p class="section-label">Навигация</p>
     <div class="nav-grid">
       <a class="nav-card" href="{{ '/about/' | relative_url }}"><strong>Обо мне</strong><span>Профессиональный профиль и направления работы.</span></a>
-      <a class="nav-card" href="{{ '/projects/' | relative_url }}"><strong>Проекты</strong><span>Несколько ключевых задач — человеческим языком и с результатом.</span></a>
+      <a class="nav-card" href="{{ '/projects/' | relative_url }}"><strong>Проекты</strong><span>Развёртывание сервисов, CI/CD и инструменты автоматизации.</span></a>
       <a class="nav-card" href="{{ '/contact/' | relative_url }}"><strong>Контакты</strong><span>LinkedIn, Telegram, GitHub и резюме.</span></a>
     </div>
   </div>

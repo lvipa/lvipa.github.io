@@ -8,15 +8,25 @@ translation: /projects/
 
 # Projects
 
-<p class="page-intro">Key implementations from my main role and selected projects. Kept concise: what was built and what it changed. Company names, hosts and internal data are intentionally omitted.</p>
+<p class="page-intro">Work at SMS-IT and selected projects: builds, service deployment, authentication and data recovery. Implementation details and public tools are below. Internal addresses, configuration and data are not published.</p>
 
 <section class="case-study">
   <p class="case-kicker">Core experience · TeamCity · CI/CD</p>
-  <h2>Delivery for 50+ services</h2>
+  <h2>Application builds and delivery with TeamCity</h2>
   <div class="case-grid">
-    <div><h3>Implementation</h3><ul><li>TeamCity build/deploy configurations for .NET and frontend.</li><li>Build → test → artefact publishing → deployment to Linux/Windows.</li><li>Repeatable steps in PowerShell, Bash and Python.</li></ul></div>
-    <div><h3>Platform patterns</h3><ul><li>Build templates and parameters instead of manual runbooks.</li><li>Branch filters, configuration dependencies and artefact-cleanup rules.</li><li>Change-impact analysis through the TeamCity REST API.</li></ul></div>
-    <div><h3>Outcome</h3><p>Release operations became 2–3 times faster with 50–70% less manual involvement. <a href="https://github.com/lvipa/devops-delivery-lab" target="_blank" rel="noopener">Public delivery patterns ↗</a></p></div>
+    <div><h3>Build chains</h3><ul><li>Builds, tests, artefacts and deployment of .NET, Python and frontend applications to Linux/Windows.</li><li>EXE/DLL and installer signing tested in three chains: version → sign → verify → package.</li><li>Repeatable steps in PowerShell, Bash and Python.</li></ul></div>
+    <div><h3>Automation</h3><ul><li>TeamCity templates, parameters and configuration dependencies.</li><li>Branch-filter synchronisation from deploy configurations to related build configurations through the REST API.</li><li>A Bash check after JDK updates: a systemd timer restarts the service only if its Java process uses a deleted executable.</li></ul></div>
+    <div><h3>GitLab Runner</h3><p>Deployed the runner in Docker on Debian 12. Configured the Docker executor, private-registry access and a .NET SDK image for build jobs.</p><p><a href="https://github.com/lvipa/teamcity-branch-sync" target="_blank" rel="noopener">Generic branch-sync example ↗</a></p></div>
+  </div>
+</section>
+
+<section class="case-study">
+  <p class="case-kicker">Kubernetes · Keycloak · Portainer</p>
+  <h2>Deploying services to Kubernetes</h2>
+  <div class="case-grid">
+    <div><h3>New Keycloak test environment</h3><ul><li>Official image, Secrets, resource limits and startup/readiness/liveness probes.</li><li>PostgreSQL database copy, schema-migration checks, rollout and OIDC endpoint checks.</li><li>MetalLB exposure, domain sign-in and scoped administration permissions.</li></ul></div>
+    <div><h3>Portainer</h3><ul><li>Helm, persistent PV/PVC storage and HTTPS.</li><li>Six Docker hosts connected without restarting applications.</li><li>AD/LDAPS with certificate validation and restricted network access to agents.</li></ul></div>
+    <div><h3>Scope</h3><p>Application deployment and maintenance in an existing Kubernetes cluster: configuration, persistent data, availability and authentication.</p></div>
   </div>
 </section>
 
@@ -34,19 +44,19 @@ translation: /projects/
   <p class="case-kicker">Reliability · PostgreSQL · S3/MinIO · Observability</p>
   <h2>Service and data reliability</h2>
   <div class="case-grid">
-    <div><h3>Operations</h3><ul><li>30+ Linux/Windows servers, containers, Nginx/IIS.</li><li>PostgreSQL, Redis, S3/MinIO and file storage.</li><li>AD, DNS, GPO and service identities.</li></ul></div>
-    <div><h3>Control and recovery</h3><ul><li>Backups for databases, configuration and files.</li><li>Health checks, consistent directories and logging.</li><li>Zabbix, Grafana, ELK and Graylog for metrics and logs.</li></ul></div>
-    <div><h3>Outcome</h3><p>Complex incidents are investigated across the application → OS → network → proxy → database → CI/CD path, rather than by guesswork.</p></div>
+    <div><h3>Operations</h3><ul><li>Linux/Windows environments, containers and Nginx/IIS reverse proxies.</li><li>PostgreSQL, Redis, S3/MinIO and file storage.</li><li>AD, DNS, GPO and service identities.</li></ul></div>
+    <div><h3>Updates and recovery</h3><ul><li>Tested TeamCity updates and rollback for three AI services, preserving models and data.</li><li>Test-database restoration from templates; database, configuration and file backups in S3/MinIO.</li><li>Zabbix checks model readiness, API availability and responses without uploading user documents.</li></ul></div>
+    <div><h3>Diagnosis</h3><p>Investigated degradation across several environments, tracing the application, OS, network, reverse proxy, database and CI/CD. Removed the causes and standardised configuration.</p></div>
   </div>
 </section>
 
 <section class="case-study">
   <p class="case-kicker">DevSecOps · Security automation</p>
-  <h2>Security checks in CI/CD</h2>
+  <h2>Security scans and consolidated reports</h2>
   <div class="case-grid">
     <div><h3>Tools</h3><ul><li>Trivy for SCA and containers.</li><li>Semgrep and CodeQL for SAST.</li><li>Normalised results and consolidated reporting.</li></ul></div>
-    <div><h3>Implementation</h3><ul><li>Targeted scans by project and stack.</li><li>Separate reports for frontend, .NET, Python and legacy code.</li><li>Reproducible CVE-catalogue export with SHA-256.</li></ul></div>
-    <div><h3>Outcome</h3><p>Security became a clear quality gate in CI. <a href="https://github.com/lvipa/security-scan-orchestrator" target="_blank" rel="noopener">Security Scan Orchestrator ↗</a> · <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">FSTEC exporter ↗</a></p></div>
+    <div><h3>Implementation</h3><ul><li>PowerShell orchestration with project and scanner selection.</li><li>Reports for frontend, .NET and Python projects in JSON/SARIF and Excel.</li><li>A separate CVE-catalogue export tool with SHA-256.</li></ul></div>
+    <div><h3>Public tools</h3><p>The scripts run selected scanners and collect their findings in a consolidated report for review.</p><p><a href="https://github.com/lvipa/security-scan-orchestrator" target="_blank" rel="noopener">Security Scan Orchestrator ↗</a> · <a href="https://github.com/lvipa/fstec-asutp-exporter" target="_blank" rel="noopener">FSTEC exporter ↗</a></p></div>
   </div>
 </section>
 
